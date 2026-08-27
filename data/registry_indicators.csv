@@ -1,0 +1,20 @@
+indicator,geo,year,value,source_note
+FAA_commercial_new_registrations_per_year,US,2018,175200,"FAA Aerospace Forecast FY2025-2045 UAS compendium: 14,600 new registrations/month in 2018 (x12)"
+FAA_commercial_new_registrations_per_year,US,2019,121200,"FAA: approx. 10,100/month (x12)"
+FAA_commercial_new_registrations_per_year,US,2020,94200,"FAA: 7,850/month (x12)"
+FAA_commercial_new_registrations_per_year,US,2021,102000,"FAA: around 8,500/month (x12)"
+FAA_commercial_new_registrations_per_year,US,2022,105000,"FAA: 8,750/month (x12)"
+FAA_commercial_new_registrations_per_year,US,2023,115524,"FAA: 9,627/month (x12); text says >115,000"
+FAA_commercial_new_registrations_per_year,US,2024,124440,"FAA: 10,370/month (x12); text says >124,000"
+FAA_commercial_cumulative_registrations,US,2024,965524,FAA: cumulative since April 2016
+FAA_commercial_active_fleet,US,2025,424516,"FAA Aerospace Forecast FY2026-2046, base scenario, historical"
+FAA_commercial_active_fleet_forecast_base,US,2030,540845,"FAA Aerospace Forecast FY2026-2046, base scenario"
+FAA_remote_pilot_certificates_thousands,US,2023,358,FAA FY2026-2046
+FAA_remote_pilot_certificates_thousands,US,2024,423,FAA FY2026-2046
+FAA_remote_pilot_certificates_thousands,US,2025,493,FAA FY2026-2046
+AESA_registered_UAS_operators,ES,2024,119300,"AESA press release (derived: 150,332 / 1.26)"
+AESA_registered_UAS_operators,ES,2025,150332,"AESA press release, end of 2025"
+EASA_registered_operators_EU,EU,2025,2000000,EASA press release May 2025: more than two million registered drone operators in Europe
+HACZ_registered_UAS_operators,HR,2024,2464,HACZ Godisnje izvjesce o radu za 2024.
+HACZ_registered_remote_pilots,HR,2024,9633,HACZ Godisnje izvjesce o radu za 2024.
+HACZ_specific_category_authorisations,HR,2024,18,HACZ Godisnje izvjesce o radu za 2024.

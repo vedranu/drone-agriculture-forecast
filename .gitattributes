@@ -1,0 +1,11 @@
+* text=auto
+*.m text
+*.py text
+*.csv text
+*.md text
+*.png binary
+*.eps binary
+*.mat binary
+*.docx binary
+*.xlsx binary
+*.pdf binary

@@ -1,0 +1,12 @@
+# MATLAB/Octave
+*.asv
+*.mat
+octave-workspace
+# Python
+__pycache__/
+*.pyc
+# Office temp
+~$*
+# build scratch
+paper/out/
+paper/tpl/

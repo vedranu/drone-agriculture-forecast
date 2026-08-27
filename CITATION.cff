@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this data set or code, please cite it as below, together with the accompanying paper."
+title: "drone-agriculture-forecast: bibliometric data and MATLAB growth-model pipeline for UAV research in agriculture"
+version: 1.0.0
+date-released: "2026-08-28"
+license: MIT
+repository-code: "https://github.com/vedranu/drone-agriculture-forecast"
+authors:
+  - given-names: "Vedran"
+    family-names: "Uroš"
+    affiliation: "Faculty of Organization and Informatics, University of Zagreb, Varaždin, Croatia"
+  - given-names: "Marko"
+    family-names: "Jelić"
+    affiliation: "University of Applied Sciences „Marko Marulić" in Knin, Knin, Croatia"
+keywords:
+  - unmanned aerial vehicles
+  - precision agriculture
+  - agricultural drones
+  - bibliometrics
+  - technology forecasting
+  - growth models
+  - MATLAB
+abstract: >-
+  Annual OpenAlex counts (2005-2025) of articles combining UAV terms with agricultural
+  terms, using a documented noise-filtered query, with normalising denominators and seven
+  sub-domains, and a toolbox-free MATLAB pipeline fitting exponential, logistic, Gompertz
+  and Bass growth models by Poisson deviance, comparing them with QAICc, backtesting them
+  and producing negative-binomial bootstrap forecast intervals for 2028-2035. Companion
+  to the drone-ecology-forecast repository (doi:10.5281/zenodo.22119199).
