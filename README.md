@@ -19,7 +19,8 @@ forecasts for 3/5/7/10-year horizons.
 | Folder | What it holds |
 |---|---|
 | `data/` | `openalex_drone_agro_annual.csv` (input, one row per year), `raw_openalex_counts.csv` (long format), `registry_indicators.csv` (FAA/AESA/EASA/HACZ context figures), `codebook.md` (query definitions incl. the noise filter, variables, limitations) |
-| `matlab/` | `drone_env_forecast.m` (main script, OPTIONS block at the top), `drone_env_projection_10y.m` (year-by-year projection 2026–2035 for the core series and each sub-domain) and the functions they call |
+| `matlab/` | `drone_env_forecast.m` (main script, OPTIONS block at the top), `drone_env_projection_10y.m` (year-by-year projection 2026–2035 for the core series and each sub-domain), `revision_runs.m` (sensitivity battery, see below) and the functions they call |
+| `results/`, `results_rev/` | complete output of the base run and of the sensitivity battery (MATLAB R2023b, 1000 bootstrap replicates); `results_rev_log.txt` is the full console log |
 | `python/` | `replicate_fits.py` (independent replication of the fits with scipy), `build_projection.py` (assembles the projection workbook and figures) |
 | `validation/` | manual precision check of the query: random samples (raw API responses), A/B/C coding workbook, sensitivity of the clean vs. raw query |
 
@@ -34,7 +35,14 @@ or GNU Octave 8+. Python 3.9+ with numpy, scipy, pandas, matplotlib, openpyxl fo
 cd matlab
 drone_env_forecast          % ~1–3 min in MATLAB with 1000 bootstrap replicates; writes ../results
 drone_env_projection_10y    % ~10 min; writes ../projection/<series>/
+revision_runs               % ~20 min; base rerun + 5 sensitivity runs, writes ../results and ../results_rev/
 ```
+
+`revision_runs.m` reproduces the sensitivity battery reported in the paper: the base forecast,
+the average of the three saturating models only (logistic, Gompertz, Bass with renormalised
+QAICc weights), the share analysis without the partly artefactual 2025 observation, and the
+share analysis under three alternative denominators (OpenAlex subfield Agronomy, field
+Agricultural and Biological Sciences, all indexed works).
 
 Outputs: `models_count.csv`, `models_share.csv`, `forecast_count.csv`, `forecast_share.csv`,
 three figures (PNG 600 dpi + EPS) and a `.mat` file with the full result structure.

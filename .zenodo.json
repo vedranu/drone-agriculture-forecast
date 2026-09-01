@@ -12,7 +12,7 @@
       "affiliation": "University of Applied Sciences \"Marko Marulić\" in Knin, Knin, Croatia"
     }
   ],
-  "description": "Annual OpenAlex counts (2005-2025) of articles combining UAV terms with agricultural terms, using a documented noise-filtered query, with normalising denominators and seven sub-domains, and a toolbox-free MATLAB pipeline fitting exponential, logistic, Gompertz and Bass growth models by Poisson deviance, comparing them with QAICc, backtesting them and producing negative-binomial bootstrap forecast intervals for 2028-2035. Companion to the paper \"Drones in Agriculture: Bibliometric State of the Art and Growth Forecasts to 2035\" (MIPRO Robotics, RTA-DRONES) and to the drone-ecology-forecast repository (doi:10.5281/zenodo.22119199).",
+  "description": "Annual OpenAlex counts (2005-2025) of articles combining UAV terms with agricultural terms, using a documented noise-filtered query, with normalising denominators and seven sub-domains, and a toolbox-free MATLAB pipeline fitting exponential, logistic, Gompertz and Bass growth models by Poisson deviance, comparing them with QAICc, backtesting them and producing negative-binomial bootstrap forecast intervals for 2028-2035, together with a sensitivity battery (saturating-models-only average, share analysis without 2025, three alternative denominators). Companion to the paper \"Drones in Agriculture: Bibliometric State of the Art and Growth Forecasts to 2035\" (MIPRO Robotics, RTA-DRONES) and to the drone-ecology-forecast repository (doi:10.5281/zenodo.22119199).",
   "keywords": [
     "unmanned aerial vehicles",
     "precision agriculture",
