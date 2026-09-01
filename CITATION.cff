@@ -5,6 +5,11 @@ version: 1.1.0
 date-released: "2026-09-01"
 license: MIT
 repository-code: "https://github.com/vedranu/drone-agriculture-forecast"
+doi: 10.5281/zenodo.22172737
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.22172737
+    description: "Concept DOI for all versions"
 authors:
   - given-names: "Vedran"
     family-names: "Uroš"
