@@ -1,0 +1,456 @@
+
+########## revision run: base ##########
+=== Data: core_drone_agro / agro_only, 2005-2025 (n = 21 complete years) ===
+Papers 2005: 29 -> 2025: 4381
+CAGR 2005-2025: 28.5 %; last 10 years: 30.4 %
+Share of agricultural literature: 0.21 -> 8.53 per 1000
+Share of all drone literature: 3.0 % -> 17.1 %
+Mann-Kendall (counts): S=208, Z=6.25, p=4.1e-10, Sen slope=124.8 papers/yr [90% CI 86.0, 170.8]
+Mann-Kendall (share):  S=200, Z=6.01, p=1.9e-09, Sen slope=0.379 per-1000/yr [90% CI 0.282, 0.474]
+Breakpoint (counts): 2009, growth 15.6%/yr before vs 31.9%/yr after (F=5.2, p~0.0175)
+Breakpoint (share):  2009, growth 5.1%/yr before vs 25.8%/yr after (F=7.3, p~0.00526)
+
+Subdomains (2015 vs 2025, CAGR last 10 y):
+  Crop monitoring/phenotyping          42   1080   38.4 %
+  Spraying/application                 35    740   35.7 %
+  Weed detection                       18    226   28.8 %
+  Irrigation/water stress              19    618   41.7 %
+  Disease & pest detection             22    617   39.6 %
+  Yield prediction                      6    372   51.1 %
+  Livestock                            25    229   24.8 %
+
+=== Growth models, target = count ===
+Overdispersion c-hat = 14.08
+model          k     deviance      QAICc   weight  RMSElog  parameters
+exponential    2        283.4       36.1    0.391    0.195  a=26.6, b=0.2525 (28.7 %/yr)
+logistic       3        269.4       37.9    0.163    0.179  K=2.103e+04, r=0.269, t_mid=2030.4
+gompertz       3        253.0       36.7    0.292    0.206  K=3.221e+09, r=0.017, t_mid=2181.2
+bass           3        271.0       38.0    0.154    0.179  m=1.903e+05, p=0.00011, q=0.267, t_peak=2033.3
+Rolling-origin backtest (origins [2018 2020 2022]): MAPE % | bias % | RMSElog
+  exponential    31.8    31.8    0.296   per-origin MAPE: [33.3 44.4 17.8]
+  logistic       32.2    20.3    0.331   per-origin MAPE: [33.3 44.4 19.1]
+  gompertz       28.9    26.2    0.272   per-origin MAPE: [32.4 43.4 11]
+  bass           34.4    17.3    0.377   per-origin MAPE: [33.3 44.4 25.6]
+Bootstrap (1000 replicates) ...
+  bootstrap 100 / 1000
+  bootstrap 200 / 1000
+  bootstrap 300 / 1000
+  bootstrap 400 / 1000
+  bootstrap 500 / 1000
+  bootstrap 600 / 1000
+  bootstrap 700 / 1000
+  bootstrap 800 / 1000
+  bootstrap 900 / 1000
+  bootstrap 1000 / 1000
+Forecast (count, papers/yr) point estimate and 90 % bootstrap interval:
+model                          2028                   2030                   2032                   2035
+exponential      8850 [   7818,   9991] 1.466e+04 [1.266e+04,1.692e+04] 2.429e+04 [2.056e+04,2.862e+04] 5.181e+04 [4.242e+04,6.315e+04]
+logistic         7258 [   5166,   9766]     9977 [   6089,1.647e+04] 1.277e+04 [   6688,2.766e+04] 1.632e+04 [   7219,6.067e+04]
+gompertz         7783 [   6279,   9537] 1.191e+04 [   8869,1.584e+04] 1.796e+04 [1.227e+04,2.626e+04] 3.246e+04 [1.899e+04,5.599e+04]
+bass             7304 [   4620,   9941]     9871 [   4612,1.678e+04] 1.195e+04 [   3933,2.85e+04] 1.238e+04 [   2393,6.305e+04]
+QAICc-avg        8237 [   6422,   9457] 1.307e+04 [   8523,1.567e+04] 2.053e+04 [1.091e+04,2.595e+04] 4.026e+04 [1.421e+04,5.595e+04]
+
+=== Growth models, target = share ===
+Overdispersion c-hat = 8.57
+model          k     deviance      QAICc   weight  RMSElog  parameters
+exponential    2        321.3       60.8    0.000    0.256  a=0.00019, b=0.1938 (21.4 %/yr)
+logistic       3        145.2       43.0    0.909    0.270  K=0.01377, r=0.267, t_mid=2023.5
+gompertz       3        184.7       47.6    0.091    0.328  K=0.2587, r=0.043, t_mid=2053.4
+Rolling-origin backtest (origins [2018 2020 2022]): MAPE % | bias % | RMSElog
+  exponential    42.0    42.0    0.368   per-origin MAPE: [46.8 50.6 28.5]
+  logistic       35.0    30.9    0.312   per-origin MAPE: [46.8 50.6 7.6]
+  gompertz       36.7    36.7    0.325   per-origin MAPE: [45.9 49.8 14.5]
+Bootstrap (1000 replicates) ...
+  bootstrap 100 / 1000
+  bootstrap 200 / 1000
+  bootstrap 300 / 1000
+  bootstrap 400 / 1000
+  bootstrap 500 / 1000
+  bootstrap 600 / 1000
+  bootstrap 700 / 1000
+  bootstrap 800 / 1000
+  bootstrap 900 / 1000
+  bootstrap 1000 / 1000
+Forecast (share, per 1000 agro papers) point estimate and 90 % bootstrap interval:
+model                          2028                   2030                   2032                   2035
+exponential      16.4 [  14.98,  18.24]    24.17 [  21.73,  27.36]    35.61 [  31.45,  41.11]     63.7 [  54.75,  75.76]
+logistic         10.6 [  9.569,  12.07]    11.72 [   10.3,   13.8]    12.49 [  10.77,  15.13]    13.16 [  11.15,  16.42]
+gompertz        12.98 [  11.84,   14.3]    16.63 [  14.73,  18.95]    20.87 [  17.85,   24.8]    28.33 [  23.04,  35.82]
+QAICc-avg       12.54 [  10.88,  14.81]    15.72 [  12.48,  20.53]    19.41 [     14,  28.61]    26.04 [  15.96,  47.79]
+
+=== Sensitivity: counts without 2025 ===
+  exponential  dev=   261.5  forecast [8367 13713 22477 47166]
+  logistic     dev=   140.7  forecast [4220 4680 4974 5206]
+  gompertz     dev=   171.5  forecast [6146 8616 11815 18258]
+  bass         dev=   146.7  forecast [3482 3012 2241 1175]
+[Warning: The requested print was not completed because the figure is invalid.  This may be happening because the figure was closed before
+the print could complete.] 
+[> In alternatePrintPath
+In alternatePrintPath
+In print (line 90)
+In drone_env_forecast (line 243)
+In revision_runs (line 13)] 
+
+Done. Results written to ..\results
+
+########## revision run: sat_counts ##########
+=== Data: core_drone_agro / agro_only, 2005-2025 (n = 21 complete years) ===
+Papers 2005: 29 -> 2025: 4381
+CAGR 2005-2025: 28.5 %; last 10 years: 30.4 %
+Share of agricultural literature: 0.21 -> 8.53 per 1000
+Share of all drone literature: 3.0 % -> 17.1 %
+Mann-Kendall (counts): S=208, Z=6.25, p=4.1e-10, Sen slope=124.8 papers/yr [90% CI 86.0, 170.8]
+Mann-Kendall (share):  S=200, Z=6.01, p=1.9e-09, Sen slope=0.379 per-1000/yr [90% CI 0.282, 0.474]
+Breakpoint (counts): 2009, growth 15.6%/yr before vs 31.9%/yr after (F=5.2, p~0.0175)
+Breakpoint (share):  2009, growth 5.1%/yr before vs 25.8%/yr after (F=7.3, p~0.00526)
+
+Subdomains (2015 vs 2025, CAGR last 10 y):
+  Crop monitoring/phenotyping          42   1080   38.4 %
+  Spraying/application                 35    740   35.7 %
+  Weed detection                       18    226   28.8 %
+  Irrigation/water stress              19    618   41.7 %
+  Disease & pest detection             22    617   39.6 %
+  Yield prediction                      6    372   51.1 %
+  Livestock                            25    229   24.8 %
+
+=== Growth models, target = count ===
+Overdispersion c-hat = 14.08
+model          k     deviance      QAICc   weight  RMSElog  parameters
+logistic       3        269.4       37.9    0.268    0.179  K=2.103e+04, r=0.269, t_mid=2030.4
+gompertz       3        253.0       36.7    0.479    0.206  K=3.221e+09, r=0.017, t_mid=2181.2
+bass           3        271.0       38.0    0.253    0.179  m=1.903e+05, p=0.00011, q=0.267, t_peak=2033.3
+Rolling-origin backtest (origins [2018 2020 2022]): MAPE % | bias % | RMSElog
+  logistic       32.2    20.3    0.331   per-origin MAPE: [33.3 44.4 19.1]
+  gompertz       28.9    26.2    0.272   per-origin MAPE: [32.4 43.4 11]
+  bass           34.4    17.3    0.377   per-origin MAPE: [33.3 44.4 25.6]
+Bootstrap (1000 replicates) ...
+  bootstrap 100 / 1000
+  bootstrap 200 / 1000
+  bootstrap 300 / 1000
+  bootstrap 400 / 1000
+  bootstrap 500 / 1000
+  bootstrap 600 / 1000
+  bootstrap 700 / 1000
+  bootstrap 800 / 1000
+  bootstrap 900 / 1000
+  bootstrap 1000 / 1000
+Forecast (count, papers/yr) point estimate and 90 % bootstrap interval:
+model                          2028                   2030                   2032                   2035
+logistic         7258 [   5071,   9927]     9977 [   5912,1.682e+04] 1.277e+04 [   6539,2.85e+04] 1.632e+04 [   7027,6.309e+04]
+gompertz         7783 [   6261,   9545] 1.191e+04 [   8796,1.58e+04] 1.796e+04 [1.206e+04,2.612e+04] 3.246e+04 [1.865e+04,5.567e+04]
+bass             7304 [   4727,   9913]     9871 [   4691,1.676e+04] 1.195e+04 [   3992,2.818e+04] 1.238e+04 [   2392,6.227e+04]
+QAICc-avg        7505 [   5660,   9183] 1.087e+04 [   6775,1.519e+04] 1.525e+04 [   7159,2.509e+04] 2.402e+04 [   6570,5.289e+04]
+
+=== Growth models, target = share ===
+Overdispersion c-hat = 8.57
+model          k     deviance      QAICc   weight  RMSElog  parameters
+exponential    2        321.3       60.8    0.000    0.256  a=0.00019, b=0.1938 (21.4 %/yr)
+logistic       3        145.2       43.0    0.909    0.270  K=0.01377, r=0.267, t_mid=2023.5
+gompertz       3        184.7       47.6    0.091    0.328  K=0.2587, r=0.043, t_mid=2053.4
+Rolling-origin backtest (origins [2018 2020 2022]): MAPE % | bias % | RMSElog
+  exponential    42.0    42.0    0.368   per-origin MAPE: [46.8 50.6 28.5]
+  logistic       35.0    30.9    0.312   per-origin MAPE: [46.8 50.6 7.6]
+  gompertz       36.7    36.7    0.325   per-origin MAPE: [45.9 49.8 14.5]
+Bootstrap (1000 replicates) ...
+  bootstrap 100 / 1000
+  bootstrap 200 / 1000
+  bootstrap 300 / 1000
+  bootstrap 400 / 1000
+  bootstrap 500 / 1000
+  bootstrap 600 / 1000
+  bootstrap 700 / 1000
+  bootstrap 800 / 1000
+  bootstrap 900 / 1000
+  bootstrap 1000 / 1000
+Forecast (share, per 1000 agro papers) point estimate and 90 % bootstrap interval:
+model                          2028                   2030                   2032                   2035
+exponential      16.4 [  14.92,   18.3]    24.17 [  21.62,  27.56]    35.61 [  31.29,  41.48]     63.7 [  54.49,  76.23]
+logistic         10.6 [  9.475,  12.07]    11.72 [  10.18,  13.87]    12.49 [  10.63,  15.29]    13.16 [  10.98,  16.53]
+gompertz        12.98 [  11.84,  14.45]    16.63 [  14.66,   19.2]    20.87 [  17.76,  25.04]    28.33 [  22.76,  36.33]
+QAICc-avg        12.5 [  10.79,  14.74]    15.62 [  12.27,   20.4]    19.19 [  13.67,  28.11]    25.76 [  15.56,  46.09]
+
+Done. Results written to ..\results_rev\sat_counts
+
+########## revision run: no2025 ##########
+=== Data: core_drone_agro / agro_only, 2005-2024 (n = 20 complete years) ===
+Papers 2005: 29 -> 2024: 3012
+CAGR 2005-2024: 27.7 %; last 10 years: 29.2 %
+Share of agricultural literature: 0.21 -> 7.39 per 1000
+Share of all drone literature: 3.0 % -> 16.2 %
+Mann-Kendall (counts): S=188, Z=6.07, p=1.3e-09, Sen slope=113.1 papers/yr [90% CI 74.7, 150.0]
+Mann-Kendall (share):  S=180, Z=5.81, p=6.3e-09, Sen slope=0.337 per-1000/yr [90% CI 0.252, 0.432]
+Breakpoint (counts): 2009, growth 15.3%/yr before vs 32.1%/yr after (F=5.0, p~0.0201)
+Breakpoint (share):  2009, growth 4.1%/yr before vs 26.6%/yr after (F=9.0, p~0.00235)
+
+Subdomains (2014 vs 2024, CAGR last 10 y):
+  Crop monitoring/phenotyping          25    686   39.3 %
+  Spraying/application                 25    555   36.3 %
+  Weed detection                       19    176   24.9 %
+  Irrigation/water stress              21    377   33.5 %
+  Disease & pest detection              9    329   43.3 %
+  Yield prediction                      6    236   44.4 %
+  Livestock                            22    181   23.5 %
+
+=== Growth models, target = count ===
+Overdispersion c-hat = 8.47
+model          k     deviance      QAICc   weight  RMSElog  parameters
+exponential    2        261.5       53.2    0.002    0.216  a=28.5, b=0.2471 (28.0 %/yr)
+logistic       3        140.7       41.7    0.535    0.214  K=5372, r=0.307, t_mid=2023.8
+gompertz       3        171.5       45.4    0.087    0.266  K=1.07e+06, r=0.034, t_mid=2076.5
+bass           3        146.7       42.4    0.376    0.201  m=4.711e+04, p=0.00033, q=0.299, t_peak=2026.8
+Rolling-origin backtest (origins [2018 2020 2022]): MAPE % | bias % | RMSElog
+  exponential    33.3    33.3    0.308   per-origin MAPE: [31.4 44.9 23.6]
+  logistic       28.9    23.3    0.280   per-origin MAPE: [31.4 44.9 10.3]
+  gompertz       28.4    28.3    0.271   per-origin MAPE: [30.7 44.1 10.4]
+  bass           30.1    20.7    0.308   per-origin MAPE: [31.4 44.9 14]
+Bootstrap (1000 replicates) ...
+  bootstrap 100 / 1000
+  bootstrap 200 / 1000
+  bootstrap 300 / 1000
+  bootstrap 400 / 1000
+  bootstrap 500 / 1000
+  bootstrap 600 / 1000
+  bootstrap 700 / 1000
+  bootstrap 800 / 1000
+  bootstrap 900 / 1000
+  bootstrap 1000 / 1000
+Forecast (count, papers/yr) point estimate and 90 % bootstrap interval:
+model                          2028                   2030                   2032                   2035
+exponential      8367 [   7264,   9634] 1.371e+04 [1.159e+04,1.623e+04] 2.248e+04 [1.85e+04,2.73e+04] 4.717e+04 [3.744e+04,5.973e+04]
+logistic         4220 [   3312,   5731]     4680 [   3517,   6987]     4974 [   3635,   7987]     5206 [   3714,   8925]
+gompertz         6146 [   5056,   7523]     8616 [   6658,1.137e+04] 1.181e+04 [   8513,1.679e+04] 1.826e+04 [1.183e+04,3.008e+04]
+bass             3482 [   2271,   5521]     3012 [   1662,   6164]     2241 [   1067,   6178]     1175 [  467.6,   4515]
+QAICc-avg        5439 [   3615,   7841]     7172 [   3682,1.248e+04]     9436 [   3751,2.003e+04] 1.441e+04 [   3748,4.106e+04]
+
+=== Growth models, target = share ===
+Overdispersion c-hat = 8.65
+model          k     deviance      QAICc   weight  RMSElog  parameters
+exponential    2        279.3       54.2    0.001    0.241  a=0.000173, b=0.2015 (22.3 %/yr)
+logistic       3        133.4       40.2    0.949    0.299  K=0.01159, r=0.279, t_mid=2022.4
+gompertz       3        184.3       46.1    0.050    0.332  K=0.3023, r=0.042, t_mid=2055.3
+Rolling-origin backtest (origins [2018 2020 2022]): MAPE % | bias % | RMSElog
+  exponential    35.8    35.8    0.323   per-origin MAPE: [38.6 43.7 25.2]
+  logistic       29.3    27.1    0.268   per-origin MAPE: [38.6 43.7 5.6]
+  gompertz       31.7    31.7    0.289   per-origin MAPE: [37.9 43.1 14]
+Bootstrap (1000 replicates) ...
+  bootstrap 100 / 1000
+  bootstrap 200 / 1000
+  bootstrap 300 / 1000
+  bootstrap 400 / 1000
+  bootstrap 500 / 1000
+  bootstrap 600 / 1000
+  bootstrap 700 / 1000
+  bootstrap 800 / 1000
+  bootstrap 900 / 1000
+  bootstrap 1000 / 1000
+Forecast (share, per 1000 agro papers) point estimate and 90 % bootstrap interval:
+model                          2028                   2030                   2032                   2035
+exponential     17.77 [  15.63,  20.22]    26.59 [  22.81,  31.01]    39.79 [  33.41,  47.35]    72.81 [  58.98,   89.8]
+logistic        9.597 [  8.327,  11.38]    10.36 [  8.791,  12.79]    10.85 [  9.062,  13.79]    11.26 [  9.269,  14.82]
+gompertz        13.16 [  11.31,  15.34]    16.93 [  13.89,  20.74]    21.34 [  16.72,  27.87]    29.19 [  21.11,  41.98]
+QAICc-avg       11.81 [  9.535,  15.72]    14.55 [  10.56,  22.18]     17.7 [  11.39,  31.58]    23.38 [  12.49,  54.56]
+
+Done. Results written to ..\results_rev\no2025
+
+########## revision run: den_subfield ##########
+=== Data: core_drone_agro / subfield1102_agronomy, 2005-2025 (n = 21 complete years) ===
+Papers 2005: 29 -> 2025: 4381
+CAGR 2005-2025: 28.5 %; last 10 years: 30.4 %
+Share of agricultural literature: 3.47 -> 221.82 per 1000
+Share of all drone literature: 3.0 % -> 17.1 %
+Mann-Kendall (counts): S=208, Z=6.25, p=4.1e-10, Sen slope=124.8 papers/yr [90% CI 86.0, 170.8]
+Mann-Kendall (share):  S=194, Z=5.83, p=5.6e-09, Sen slope=7.508 per-1000/yr [90% CI 5.006, 10.032]
+Breakpoint (counts): 2009, growth 15.6%/yr before vs 31.9%/yr after (F=5.2, p~0.0175)
+Breakpoint (share):  2009, growth -0.9%/yr before vs 29.9%/yr after (F=28.1, p~4.05e-06)
+
+Subdomains (2015 vs 2025, CAGR last 10 y):
+  Crop monitoring/phenotyping          42   1080   38.4 %
+  Spraying/application                 35    740   35.7 %
+  Weed detection                       18    226   28.8 %
+  Irrigation/water stress              19    618   41.7 %
+  Disease & pest detection             22    617   39.6 %
+  Yield prediction                      6    372   51.1 %
+  Livestock                            25    229   24.8 %
+
+=== Growth models, target = count ===
+Overdispersion c-hat = 14.08
+model          k     deviance      QAICc   weight  RMSElog  parameters
+exponential    2        283.4       36.1    0.391    0.195  a=26.6, b=0.2525 (28.7 %/yr)
+logistic       3        269.4       37.9    0.163    0.179  K=2.103e+04, r=0.269, t_mid=2030.4
+gompertz       3        253.0       36.7    0.292    0.206  K=3.221e+09, r=0.017, t_mid=2181.2
+bass           3        271.0       38.0    0.154    0.179  m=1.903e+05, p=0.00011, q=0.267, t_peak=2033.3
+Rolling-origin backtest (origins [2018 2020 2022]): MAPE % | bias % | RMSElog
+  exponential    31.8    31.8    0.296   per-origin MAPE: [33.3 44.4 17.8]
+  logistic       32.2    20.3    0.331   per-origin MAPE: [33.3 44.4 19.1]
+  gompertz       28.9    26.2    0.272   per-origin MAPE: [32.4 43.4 11]
+  bass           34.4    17.3    0.377   per-origin MAPE: [33.3 44.4 25.6]
+Bootstrap (300 replicates) ...
+  bootstrap 100 / 300
+  bootstrap 200 / 300
+  bootstrap 300 / 300
+Forecast (count, papers/yr) point estimate and 90 % bootstrap interval:
+model                          2028                   2030                   2032                   2035
+exponential      8850 [   7808,   9940] 1.466e+04 [1.262e+04,1.685e+04] 2.429e+04 [2.043e+04,2.858e+04] 5.181e+04 [4.214e+04,6.293e+04]
+logistic         7258 [   5206,   9663]     9977 [   6175,1.624e+04] 1.277e+04 [   6803,2.687e+04] 1.632e+04 [   7447,5.884e+04]
+gompertz         7783 [   6085,   9598] 1.191e+04 [   8601,1.596e+04] 1.796e+04 [1.192e+04,2.648e+04] 3.246e+04 [1.857e+04,5.691e+04]
+bass             7304 [   4582,1.002e+04]     9871 [   4498,1.69e+04] 1.195e+04 [   3839,2.853e+04] 1.238e+04 [   2386,6.25e+04]
+QAICc-avg        8216 [   6369,   9434]  1.3e+04 [   8357,1.574e+04] 2.04e+04 [1.08e+04,2.611e+04] 3.931e+04 [1.524e+04,5.608e+04]
+
+=== Growth models, target = share ===
+Overdispersion c-hat = 8.78
+model          k     deviance      QAICc   weight  RMSElog  parameters
+exponential    2        177.7       43.0    0.301    0.254  a=0.00199, b=0.2362 (26.6 %/yr)
+logistic       3        147.3       42.3    0.429    0.289  K=0.7733, r=0.262, t_mid=2028.7
+gompertz       3        155.5       43.2    0.270    0.314  K=2.515e+05, r=0.015, t_mid=2196.2
+Rolling-origin backtest (origins [2018 2020 2022]): MAPE % | bias % | RMSElog
+  exponential    21.2    20.7    0.205   per-origin MAPE: [20.3 26.8 16.6]
+  logistic       18.4    13.9    0.186   per-origin MAPE: [20.3 26.8 8.2]
+  gompertz       19.7    19.2    0.192   per-origin MAPE: [19.7 26.2 13.2]
+Bootstrap (300 replicates) ...
+  bootstrap 100 / 300
+  bootstrap 200 / 300
+  bootstrap 300 / 300
+Forecast (share, per 1000 agro papers) point estimate and 90 % bootstrap interval:
+model                          2028                   2030                   2032                   2035
+exponential     453.9 [  420.3,  488.2]    727.9 [  664.9,  795.1]     1167 [   1050,   1295]     2371 [   2090,   2689]
+logistic        352.2 [  296.4,    417]    452.9 [  352.4,    596]    545.1 [  394.1,  820.4]    649.6 [  439.7,   1178]
+gompertz        407.9 [    367,  457.2]    611.2 [  526.3,  717.3]    904.7 [  738.1,   1115]     1593 [   1190,   2158]
+QAICc-avg       418.8 [  373.1,  465.3]    641.1 [  530.5,    741]    968.2 [  732.2,   1184]     1811 [   1186,   2376]
+
+Done. Results written to ..\results_rev\den_subfield
+
+########## revision run: den_field11 ##########
+=== Data: core_drone_agro / field11_agbio, 2005-2025 (n = 21 complete years) ===
+Papers 2005: 29 -> 2025: 4381
+CAGR 2005-2025: 28.5 %; last 10 years: 30.4 %
+Share of agricultural literature: 0.19 -> 12.27 per 1000
+Share of all drone literature: 3.0 % -> 17.1 %
+Mann-Kendall (counts): S=208, Z=6.25, p=4.1e-10, Sen slope=124.8 papers/yr [90% CI 86.0, 170.8]
+Mann-Kendall (share):  S=202, Z=6.07, p=1.3e-09, Sen slope=0.449 per-1000/yr [90% CI 0.298, 0.604]
+Breakpoint (counts): 2009, growth 15.6%/yr before vs 31.9%/yr after (F=5.2, p~0.0175)
+Breakpoint (share):  2009, growth 2.3%/yr before vs 29.7%/yr after (F=21.0, p~2.57e-05)
+
+Subdomains (2015 vs 2025, CAGR last 10 y):
+  Crop monitoring/phenotyping          42   1080   38.4 %
+  Spraying/application                 35    740   35.7 %
+  Weed detection                       18    226   28.8 %
+  Irrigation/water stress              19    618   41.7 %
+  Disease & pest detection             22    617   39.6 %
+  Yield prediction                      6    372   51.1 %
+  Livestock                            25    229   24.8 %
+
+=== Growth models, target = count ===
+Overdispersion c-hat = 14.08
+model          k     deviance      QAICc   weight  RMSElog  parameters
+exponential    2        283.4       36.1    0.391    0.195  a=26.6, b=0.2525 (28.7 %/yr)
+logistic       3        269.4       37.9    0.163    0.179  K=2.103e+04, r=0.269, t_mid=2030.4
+gompertz       3        253.0       36.7    0.292    0.206  K=3.221e+09, r=0.017, t_mid=2181.2
+bass           3        271.0       38.0    0.154    0.179  m=1.903e+05, p=0.00011, q=0.267, t_peak=2033.3
+Rolling-origin backtest (origins [2018 2020 2022]): MAPE % | bias % | RMSElog
+  exponential    31.8    31.8    0.296   per-origin MAPE: [33.3 44.4 17.8]
+  logistic       32.2    20.3    0.331   per-origin MAPE: [33.3 44.4 19.1]
+  gompertz       28.9    26.2    0.272   per-origin MAPE: [32.4 43.4 11]
+  bass           34.4    17.3    0.377   per-origin MAPE: [33.3 44.4 25.6]
+Bootstrap (300 replicates) ...
+  bootstrap 100 / 300
+  bootstrap 200 / 300
+  bootstrap 300 / 300
+Forecast (count, papers/yr) point estimate and 90 % bootstrap interval:
+model                          2028                   2030                   2032                   2035
+exponential      8850 [   7808,   9940] 1.466e+04 [1.262e+04,1.685e+04] 2.429e+04 [2.043e+04,2.858e+04] 5.181e+04 [4.214e+04,6.293e+04]
+logistic         7258 [   5206,   9663]     9977 [   6175,1.624e+04] 1.277e+04 [   6803,2.687e+04] 1.632e+04 [   7447,5.884e+04]
+gompertz         7783 [   6085,   9598] 1.191e+04 [   8601,1.596e+04] 1.796e+04 [1.192e+04,2.648e+04] 3.246e+04 [1.857e+04,5.691e+04]
+bass             7304 [   4582,1.002e+04]     9871 [   4498,1.69e+04] 1.195e+04 [   3839,2.853e+04] 1.238e+04 [   2386,6.25e+04]
+QAICc-avg        8216 [   6369,   9434]  1.3e+04 [   8357,1.574e+04] 2.04e+04 [1.08e+04,2.611e+04] 3.931e+04 [1.524e+04,5.608e+04]
+
+=== Growth models, target = share ===
+Overdispersion c-hat = 7.38
+model          k     deviance      QAICc   weight  RMSElog  parameters
+exponential    2        203.7       53.9    0.011    0.234  a=0.000125, b=0.2319 (26.1 %/yr)
+logistic       3        119.5       45.2    0.871    0.286  K=0.02891, r=0.276, t_mid=2026.2
+gompertz       3        149.1       49.2    0.117    0.320  K=54.63, r=0.024, t_mid=2114.1
+Rolling-origin backtest (origins [2018 2020 2022]): MAPE % | bias % | RMSElog
+  exponential    24.5    24.0    0.237   per-origin MAPE: [20.5 30.5 22.4]
+  logistic       18.3    17.2    0.186   per-origin MAPE: [20.5 30.5 4]
+  gompertz       23.2    22.7    0.226   per-origin MAPE: [19.9 29.8 19.8]
+Bootstrap (300 replicates) ...
+  bootstrap 100 / 300
+  bootstrap 200 / 300
+  bootstrap 300 / 300
+Forecast (share, per 1000 agro papers) point estimate and 90 % bootstrap interval:
+model                          2028                   2030                   2032                   2035
+exponential     25.96 [     24,  27.95]    41.28 [  37.51,  45.08]    65.65 [  58.73,   72.7]    131.6 [  115.1,  148.7]
+logistic        17.92 [  16.09,  20.08]    21.37 [  18.41,  25.47]    24.03 [  20.02,  30.19]    26.55 [  21.43,  35.41]
+gompertz        22.15 [   20.3,  24.15]    31.88 [  28.26,  35.87]    45.12 [  38.74,  52.66]     73.7 [  60.23,  91.86]
+QAICc-avg       21.08 [  18.52,  24.24]    29.24 [  23.45,  36.91]    39.78 [  28.11,  56.08]     63.4 [  35.89,  105.1]
+
+Done. Results written to ..\results_rev\den_field11
+
+########## revision run: den_allworks ##########
+=== Data: core_drone_agro / all_works, 2005-2025 (n = 21 complete years) ===
+Papers 2005: 29 -> 2025: 4381
+CAGR 2005-2025: 28.5 %; last 10 years: 30.4 %
+Share of agricultural literature: 0.01 -> 0.61 per 1000
+Share of all drone literature: 3.0 % -> 17.1 %
+Mann-Kendall (counts): S=208, Z=6.25, p=4.1e-10, Sen slope=124.8 papers/yr [90% CI 86.0, 170.8]
+Mann-Kendall (share):  S=206, Z=6.19, p=6e-10, Sen slope=0.021 per-1000/yr [90% CI 0.014, 0.029]
+Breakpoint (counts): 2009, growth 15.6%/yr before vs 31.9%/yr after (F=5.2, p~0.0175)
+Breakpoint (share):  2009, growth 4.4%/yr before vs 30.7%/yr after (F=18.9, p~4.85e-05)
+
+Subdomains (2015 vs 2025, CAGR last 10 y):
+  Crop monitoring/phenotyping          42   1080   38.4 %
+  Spraying/application                 35    740   35.7 %
+  Weed detection                       18    226   28.8 %
+  Irrigation/water stress              19    618   41.7 %
+  Disease & pest detection             22    617   39.6 %
+  Yield prediction                      6    372   51.1 %
+  Livestock                            25    229   24.8 %
+
+=== Growth models, target = count ===
+Overdispersion c-hat = 14.08
+model          k     deviance      QAICc   weight  RMSElog  parameters
+exponential    2        283.4       36.1    0.391    0.195  a=26.6, b=0.2525 (28.7 %/yr)
+logistic       3        269.4       37.9    0.163    0.179  K=2.103e+04, r=0.269, t_mid=2030.4
+gompertz       3        253.0       36.7    0.292    0.206  K=3.221e+09, r=0.017, t_mid=2181.2
+bass           3        271.0       38.0    0.154    0.179  m=1.903e+05, p=0.00011, q=0.267, t_peak=2033.3
+Rolling-origin backtest (origins [2018 2020 2022]): MAPE % | bias % | RMSElog
+  exponential    31.8    31.8    0.296   per-origin MAPE: [33.3 44.4 17.8]
+  logistic       32.2    20.3    0.331   per-origin MAPE: [33.3 44.4 19.1]
+  gompertz       28.9    26.2    0.272   per-origin MAPE: [32.4 43.4 11]
+  bass           34.4    17.3    0.377   per-origin MAPE: [33.3 44.4 25.6]
+Bootstrap (300 replicates) ...
+  bootstrap 100 / 300
+  bootstrap 200 / 300
+  bootstrap 300 / 300
+Forecast (count, papers/yr) point estimate and 90 % bootstrap interval:
+model                          2028                   2030                   2032                   2035
+exponential      8850 [   7808,   9940] 1.466e+04 [1.262e+04,1.685e+04] 2.429e+04 [2.043e+04,2.858e+04] 5.181e+04 [4.214e+04,6.293e+04]
+logistic         7258 [   5206,   9663]     9977 [   6175,1.624e+04] 1.277e+04 [   6803,2.687e+04] 1.632e+04 [   7447,5.884e+04]
+gompertz         7783 [   6085,   9598] 1.191e+04 [   8601,1.596e+04] 1.796e+04 [1.192e+04,2.648e+04] 3.246e+04 [1.857e+04,5.691e+04]
+bass             7304 [   4582,1.002e+04]     9871 [   4498,1.69e+04] 1.195e+04 [   3839,2.853e+04] 1.238e+04 [   2386,6.25e+04]
+QAICc-avg        8216 [   6369,   9434]  1.3e+04 [   8357,1.574e+04] 2.04e+04 [1.08e+04,2.611e+04] 3.931e+04 [1.524e+04,5.608e+04]
+
+=== Growth models, target = share ===
+Overdispersion c-hat = 7.73
+model          k     deviance      QAICc   weight  RMSElog  parameters
+exponential    2        197.2       50.8    0.036    0.224  a=5.08e-06, b=0.2417 (27.3 %/yr)
+logistic       3        128.2       44.6    0.795    0.271  K=0.00159, r=0.281, t_mid=2026.8
+gompertz       3        152.2       47.7    0.168    0.303  K=15.83, r=0.021, t_mid=2135.7
+Rolling-origin backtest (origins [2018 2020 2022]): MAPE % | bias % | RMSElog
+  exponential    24.1    23.7    0.232   per-origin MAPE: [21.9 29.1 21.2]
+  logistic       18.8    16.9    0.188   per-origin MAPE: [21.9 29.1 5.3]
+  gompertz       22.9    22.5    0.222   per-origin MAPE: [21.3 28.4 18.9]
+Bootstrap (300 replicates) ...
+  bootstrap 100 / 300
+  bootstrap 200 / 300
+  bootstrap 300 / 300
+Forecast (share, per 1000 agro papers) point estimate and 90 % bootstrap interval:
+model                          2028                   2030                   2032                   2035
+exponential     1.319 [   1.22,  1.419]    2.138 [   1.95,  2.328]    3.468 [  3.116,  3.831]    7.161 [   6.31,  8.092]
+logistic       0.9254 [ 0.8024,  1.096]    1.128 [ 0.9272,  1.446]    1.289 [  1.017,  1.813]    1.444 [  1.093,  2.244]
+gompertz        1.139 [  1.046,   1.25]    1.685 [  1.498,  1.917]    2.452 [  2.089,  2.917]    4.183 [   3.34,  5.365]
+QAICc-avg       1.124 [ 0.9633,  1.255]    1.636 [  1.275,  1.966]    2.359 [  1.615,  3.082]    4.047 [  2.287,  6.118]
+
+Done. Results written to ..\results_rev\den_allworks
+
+All revision runs done.
