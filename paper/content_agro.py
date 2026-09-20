@@ -140,6 +140,6 @@ REFERENCES = [
  'Directive 2009/128/EC of the European Parliament and of the Council of 21 October 2009 establishing a framework for Community action to achieve the sustainable use of pesticides, {i:Official Journal of the European Union}, L 309, pp. 71–86, 2009.',
  'Commission Implementing Regulation (EU) 2019/947 of 24 May 2019 on the rules and procedures for the operation of unmanned aircraft, {i:Official Journal of the European Union}, L 152, pp. 45–71, 2019.',
  'V. Uroš and M. Jelić, "drone-ecology-forecast: bibliometric data and MATLAB growth-model pipeline for UAV research in ecology and environmental monitoring (v1.0)," Zenodo, 2026, doi: 10.5281/zenodo.22119199.',
- 'V. Uroš and M. Jelić, "drone-agriculture-forecast: bibliometric data and MATLAB growth-model pipeline for UAV research in agriculture (v1.1)," Zenodo, 2026, doi: 10.5281/zenodo.22172737.',
+ 'V. Uroš and M. Jelić, "drone-agriculture-forecast: bibliometric data and MATLAB growth-model pipeline for UAV research in agriculture (v1.1)," Zenodo, 2026, doi: 10.5281/zenodo.22238128.',
  'A. Rejeb, A. Abdollahi, K. Rejeb, and H. Treiblmaier, "Drones in agriculture: A review and bibliometric analysis," {i:Computers and Electronics in Agriculture}, vol. 198, art. 107017, 2022.',
 ]

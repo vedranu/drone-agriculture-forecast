@@ -1,6 +1,6 @@
 # drone-agriculture-forecast
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22172737.svg)](https://doi.org/10.5281/zenodo.22172737)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22238128.svg)](https://doi.org/10.5281/zenodo.22238128)
 
 Reproducible data set and toolbox-free MATLAB pipeline behind the paper
 **"Drones in Agriculture: Bibliometric State of the Art and Growth Forecasts to 2035"**
@@ -71,7 +71,7 @@ time-varying, which is documented as a limitation).
 ## Citation
 
 If you use the data or the code, please cite the paper and this repository
-(see `CITATION.cff`): doi [10.5281/zenodo.22172737](https://doi.org/10.5281/zenodo.22172737).
+(see `CITATION.cff`): doi [10.5281/zenodo.22238128](https://doi.org/10.5281/zenodo.22238128).
 
 ## Licence
 
