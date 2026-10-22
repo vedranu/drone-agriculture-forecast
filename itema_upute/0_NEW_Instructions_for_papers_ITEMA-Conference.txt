@@ -1,0 +1,196 @@
+Received: Insert the date of your full paper submission
+Accepted: Will be filled by the publisher
+Published: Will be filled by the publisher
+
+
+Title of Paper (no longer than 100 characters, Title Case)
+
+Name Surname1 https://orcid.org/0000-0002-1825-0097 
+Name Surname2 https://orcid.org/0000-0002-1825-0097 
+Name Surname3 https://orcid.org/0000-0002-1825-0097 
+
+For more information about ORCID iD, please visit https://orcid.org and after the registration insert your ORCID iD number above in a presented form.
+
+Abstract: Your paper must include an abstract, consisting of 100-150 words, which provides readers with an overview of the content of your paper. It is important that your abstract clearly states the purpose of your paper and summarizes the content. Do not use first or second person (I, me, my, we, us, our, you...). Instead, use "this paper" or "the authors".
+
+Keywords: Word one, Word two, Word three (sorted by importance).
+
+Please include a list of keywords that figure prominently in your paper. These words should include important vocabulary, names of people, and names of organizations, primarily. Ensure that each keyword is repeated in the title and in the text of the abstract (this is important for SEO optimization and visibility of the full paper when published). Each word should be capitalized. Phrases should be written in Sentence case.
+
+1. INTRODUCTION
+
+All received papers prior peer review process will be subject to plagiarism check with iThenticate by CrossRef. The acceptable overall similarity index (self-plagiarism included) is under 25% (excluding small matches of less than 20 words). All papers with a higher similarity index will be returned to the authors.
+
+If your full paper and references are not properly formatted, the publisher may send the paper back to you for corrections. Authors who do not follow the formatting instructions for the full paper may be charged a fee of 35 EUR.
+
+Note that this will delay the production process, and ultimately, the release of the conference proceedings.
+
+2. SECOND PART
+
+The page format is A4 (210x297mm). Use top, bottom, left, and right margins of 2.5 cm. Pages should not be numbered.
+
+The volume of the text in English (American) should be 10 pages (all included). If a full paper exceeds 10 pages (A4 size), each additional page will be subject to a charge of 20 EUR.
+
+Full papers should be submitted electronically through the conference website: https://www.itema-conference.com/ (not over email).
+
+At the top of the first page of the paper write the date of the full paper submission; afterward, in the middle of the page, write the paper title in title case sensitive style (major words are capitalized). Use font Times New Roman Bold 14 pt. 
+
+Authors' names (bold) should be written in Times New Roman 12 pt, in the middle of the page along with the Orcid ID. Institutions' names, institutions' addresses, and e-mail addresses in the footnote should be typed in Times New Roman 10 pt. An abstract with keywords follows after the title and author's name written in Times New Roman bold and italic 12 pt as shown above.
+
+Headings should be manually numbered, written in Times New Roman Bold, in Title Case font size 12 pt, as shown in this instruction. 
+
+The paper should be typed with ordinary space, and a blank line should be left between paragraphs. Left and right margins are aligned (justified). Use font Times New Roman 12 pt for the text, as this instruction is given.
+
+Equations should be centered and written with numbers to the right, as in this example. Please use equations in MS Word and do not insert equations as a picture.
+
+Variables, Greek letters, and short formulas within the text should be written as normal text using superscript (x2), subscript (x2), and insert symbol (a, ß, ?... ) - for example, x2, H2SO4, CO2, (x+1)3/x, log2 x, a, ß, ?... Do not use Equation Editor to insert short formulas or single variables, unless it is necessary.
+
+							(1)
+
+Do not miss explanations of variables and their measurement units. Variables and units in explanations should be written as normal text using superscript and subscript/insert symbols.
+
+Numbered Lists 
+1. Key Term (KT): This is a numbered term.
+a. List level 2.
+    i. List level 3.
+    ii. List level 3.
+b. List level 2.
+2. List level 1.
+No more than three levels of lists. Must be in the above format. Do not use automatic numbering, enter letters and numbers manually.
+
+
+
+Unnumbered Lists 
+Step 1: Ask a question
+Step 2: Do background research
+Step 3: Construct a hypothesis
+Step 4: Test your hypothesis by doing an experiment
+Step 5: Analyze your data and draw a conclusion
+Step 6: Communicate your results
+
+Phase One: Typification of dairy systems
+Phase Two: Characterization of a specific dairy system
+Phase Three: Seeking ways to enhance the development of specific dairy systems
+Phase Four: Cross-site synthesis
+
+Hypothesis One: Research results in conclusion.
+Hypothesis Two: Conclusion leads to breakthrough.
+Must be in the above format.
+
+Block Quotes 
+Block quotes should be in italics and contain no beginning or ending quotation marks (Jhonson, 2014).
+
+Computer Code 
+Computer code should be indicated by using "Courier New"
+    Any proper indentations
+       should be made clear
+    and checked during final proofing.
+
+3. THIRD PART
+
+Figure 1 is an example of a figure caption within a paper that goes below the figure. The same serves for graphs.
+
+
+
+
+Figure 1. The caption should be in sentence case with no ending punctuation if only one sentence
+Source: Vrcelj, 2023
+
+Every Figure or Table must be "called out" within the text of your paper in numerical order with no abbreviations.
+Figures should be in .tif format and 300 dpi.
+Sources must be included under the figure.
+
+Tables should not include cell shading. Column and row headings should be bold and centered - everything else left aligned. The text should be given in Times New Roman 10pt. Please use Autofit to Window option for tables to place the table from the right to left end. Any other formatting will be removed. 
+
+If a figure, graph, or table is the result of your own calculations, own research, or processing, use the proper citation given below as an example.
+
+Table 1. The caption should be in sentence case with no ending punctuation if only one sentence
+XxxxxxxXxxxxxxxxYyyyy• xxxxxxxx
+• yyyyyyyy
+• xxxxxxxx
+• yyyyyyyy
+Yyyyy• xxxxxxxx
+• yyyyyyyy
+• xxxxxxxx
+• yyyyyyyy
+Source: Own calculations
+Source: Own research
+Source: Own processing
+
+4. FUTURE RESEARCH DIRECTIONS
+
+Discuss future and emerging trends. 
+
+5. CONCLUSION
+
+The section title should be "CONCLUSION" not "CONCLUSIONS". Provide a discussion of the overall coverage of the paper and concluding remarks. 
+
+Acknowledgment (Optional)
+
+Any acknowledgment to fellow researchers or funding grants should be placed within this section. 
+This research was supported by the Organization Name [grant number xxxxxx]. 
+
+References
+
+Authors are strongly advised to utilize pertinent and trustworthy literature in their work, giving preference to articles from well-regarded indexed journals like those found in the Web of Science Core Collection and Scopus. The selection of references should primarily emphasize recent discoveries, usually encompassing the preceding 2-5 years. 
+
+Although an average conference paper typically incorporates 20-30 references, it is important to note that the quality of the literature review should not be solely judged based on the number of references. Authors must be careful to cite only relevant works, regardless of their motives or intentions. References should relate only to the material cited within the paper (this is not a bibliography).
+
+References should be in APA style 7th edition and listed in alphabetical order. Please do not include any abbreviations. Any additional references should be included in an Additional reading section.
+
+All references in the text have to be colored in orange (brackets included). In-text reference citations examples: 
+* According to Jones (1998), "Students often had difficulty using APA style, especially when it was their first time" (p. 199).
+* Jones (1998) found "students often had difficulty using APA style" (p. 199); what implications does this have for teachers?
+* She stated, "Students often had difficulty using APA style" (Jones, 1998, p. 199), but she did not offer an explanation as to why.
+
+Both the list of references and the main text should align, meaning that all the references listed must be cited in the text, and vice versa. If a referenced article possesses a DOI number, it is essential for authors to include that number in the respective reference citation.
+
+Publisher checks reference citations with the RECITE which checks that your in-text citations match the reference list at the end of your work. If references do not match, the paper will be returned to the authors.
+
+EXAMPLES OF REFERENCES:
+
+It is your responsibility to ensure that all information in your paper that is taken from another source is substantiated with an in-text reference citation. Please also note that your references must strictly follow APA (American Psychological Association - 7th edition) style.
+
+Book with one author: 
+Author, A. A. (2023). Title of work. Location/City, State: Publisher. 
+Book with two authors: 
+Author, A. A., & Author, B. B. (2023). Title of work. Location/City, State: Publisher. 
+Book with more than two authors: 
+Author, A. A., Author, B. B., & Author, C. C. (2023). Title of work. Location/City, State: Publisher. 
+
+Journal article: 
+Noneva-Zlatkova, Y., & Alexandrov, A. (2021). Analysis of Higher Education Policy Changes Due to COVID-19: The Case of Bulgaria. Balkans Journal of Emerging Trends in Social Sciences, 4(2), 91-99. https://doi.org/10.31410/Balkans.JETSS.2021.4.2.91-99 
+
+A publication in press: 
+Dias, R., Pereira, J. M., & Carvalho, L. C. (In Press). The Global Pandemic (COVID-19) has Caused Long Memories in Europe's Banking Sector. Balkans Journal of Emerging Trends in Social Sciences.
+
+Edited book: 
+Author, A. A. (Ed.). (2023). Title, Harlow: Pearson Education, Inc 
+
+Chapter in an edited book (monograph): 
+Caridà, A., & Colurcio, M. (2021). Fueling novel and sustainable tourism ecosystems through resource orchestration. In V. Bevanda & S. Štetic (Eds.), Modern Management Tools and Economy of Tourism Sector in Present Era (6th International Thematic Monograph, pp. 1-20). Belgrade: Association of Economists and Managers of the Balkans with Faculty of Tourism and Hospitality, Ohrid, North Macedonia. https://doi.org/10.31410/tmt.2021-2022.1
+
+Conference paper: 
+Tarbujaru, T., & Stanca, P. I. (2022). COVID-19: A story told by women entrepreneurs about how to survive by turning a crisis into an opportunity. In V. Bevanda (Ed.), Knowledge Based Sustainable Development: Vol. 8. Selected Papers from the ERAZ Conference (pp. 19-26). Association of Economists and Managers of the Balkans. https://doi.org/10.31410/ERAZ.S.P.2022.19
+For additional examples, please explore the APA style online.
+
+ADDITIONAL READING (if applicable)
+
+In this section, provide a list of additional readings (e.g. journal articles, book chapters, case studies, etc.). You, as the contributing author(s), are the best source for suggestions on additional readings in your respective field. APA style must be followed for this section too.
+
+1 Full name of the representing institution (faculty, university), street, street number, zip code, city, country, email
+2 Full name of the representing institution (faculty, university), street, street number, zip code, city, country, email
+3 Full name of the representing institution (faculty, university), street, street number, zip code, city, country, email
+---------------
+
+------------------------------------------------------------
+
+---------------
+
+------------------------------------------------------------
+
+
+
+
+
+

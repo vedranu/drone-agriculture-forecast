@@ -1,0 +1,38 @@
+from_id,to_id,shared_keywords,inclusion_index,weighted_occ,shared
+P1C1,P2C1,5,0.5,0.4887,Precision agriculture; Crop monitoring; Quadrotor; Remote sensing; Crop protection
+P1C1,P2C2,3,0.333,0.2336,Vegetation indices; NDVI; Leaf area index
+P1C1,P2C3,1,0.1,0.0569,Multispectral imagery
+P1C1,P2C4,2,0.286,0.0612,Digital surface model; Ground control points
+P1C1,P2C5,4,0.571,0.1297,Aerial imagery; Multispectral imaging; Hyperspectral imaging; Infrared thermography
+P1C1,P2C6,2,0.286,0.0622,Weed detection; Flight altitude
+P1C2,P2C2,1,0.167,0.0311,Rice
+P1C2,P2C3,2,0.333,0.1038,Grain yield; Maize
+P1C3,P2C3,1,0.2,0.0356,Wheat
+P1C4,P2C3,1,0.25,0.0261,Plant height
+P1C5,P2C1,1,0.333,0.024,Aerial photography
+P1C5,P2C5,1,0.333,0.022,Agricultural remote sensing
+P2C1,P3C1,4,0.4,0.4304,Precision agriculture; Quadrotor; Crop protection; Pesticide spraying
+P2C1,P3C4,4,0.4,0.2375,Crop monitoring; Remote sensing; Internet of things; Agricultural robotics
+P2C2,P3C2,4,0.444,0.4006,NDVI; Vegetation indices; Nitrogen fertilization; Rice
+P2C2,P3C3,2,0.222,0.0884,Leaf area index; Crop growth monitoring
+P2C2,P3C5,2,0.286,0.0894,Crop yield prediction; Winter wheat
+P2C3,P3C2,3,0.333,0.1351,Maize; Wheat; Grain yield
+P2C3,P3C3,6,0.6,0.2646,Multispectral imagery; High-throughput phenotyping; RGB images; Plant height; Soybean; Canopy cover
+P2C4,P3C3,2,0.286,0.083,Structure from motion; Digital surface model
+P2C5,P3C1,2,0.286,0.0714,Aerial imagery; Convolutional neural networks
+P2C5,P3C6,3,1,0.1022,Multispectral imaging; Infrared thermography; Plant disease detection
+P2C6,P3C1,2,0.286,0.0726,Weed detection; Flight altitude
+P2C6,P3C3,1,0.143,0.0314,Soil moisture
+P2C6,P3C5,3,0.429,0.1209,Object-based image analysis; Random forest; Support vector machine
+P3C1,P4C1,1,0.1,0.3628,Precision agriculture
+P3C1,P4C5,3,0.6,0.1413,Convolutional neural networks; Object detection; Weed detection
+P3C1,P4C6,3,0.75,0.0997,Quadrotor; Pesticide application; Flight altitude
+P3C2,P4C2,1,0.111,0.218,Vegetation indices
+P3C2,P4C3,6,0.667,0.3208,NDVI; Maize; Wheat; Rice; Sentinel-2; NDRE
+P3C3,P4C2,4,0.364,0.225,Multispectral imagery; Leaf area index; RGB images; Crop growth monitoring
+P3C3,P4C3,3,0.333,0.1072,High-throughput phenotyping; Soil moisture; Soybean
+P3C4,P4C1,6,0.6,0.4064,Crop monitoring; Internet of things; Smart agriculture; Agricultural robotics; Food security; Sustainable agriculture
+P3C4,P4C4,4,0.444,0.1443,Remote sensing; Machine learning; Deep learning; Satellite imagery
+P3C5,P4C2,4,0.571,0.1982,Random forest; Winter wheat; Support vector machine; Partial least squares regression
+P3C5,P4C6,1,0.25,0.0573,Crop yield prediction
+P3C6,P4C4,2,0.667,0.078,Multispectral imaging; Plant disease detection

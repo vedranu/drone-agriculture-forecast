@@ -1,0 +1,129 @@
+{
+ "retrieved_years": [
+  2005,
+  2024
+ ],
+ "n_retrieved": 14173,
+ "n_removed": 474,
+ "n_works": 13699,
+ "n_with_keywords": 13682,
+ "mean_kw_per_work": 8.1,
+ "distinct_keywords": 33323,
+ "global_clusters": [
+  {
+   "cluster": 1,
+   "n": 15,
+   "total": 6237,
+   "top": [
+    "Precision agriculture",
+    "Crop monitoring",
+    "Internet of things",
+    "Smart agriculture",
+    "Remote sensing",
+    "Sustainable agriculture",
+    "Food security",
+    "Machine learning"
+   ],
+   "mean_year": 2021.53
+  },
+  {
+   "cluster": 2,
+   "n": 16,
+   "total": 5976,
+   "top": [
+    "Vegetation indices",
+    "NDVI",
+    "Multispectral imagery",
+    "Random forest",
+    "Leaf area index",
+    "Crop yield prediction",
+    "RGB images",
+    "Winter wheat"
+   ],
+   "mean_year": 2021.28
+  },
+  {
+   "cluster": 3,
+   "n": 14,
+   "total": 2989,
+   "top": [
+    "Maize",
+    "High-throughput phenotyping",
+    "Rice",
+    "Wheat",
+    "Digital surface model",
+    "Structure from motion",
+    "Soybean",
+    "Nitrogen fertilization"
+   ],
+   "mean_year": 2020.7
+  },
+  {
+   "cluster": 4,
+   "n": 10,
+   "total": 2188,
+   "top": [
+    "Convolutional neural networks",
+    "Object detection",
+    "Weed detection",
+    "Multispectral imaging",
+    "Plant disease detection",
+    "Aerial imagery",
+    "Infrared thermography",
+    "Hyperspectral imaging"
+   ],
+   "mean_year": 2021.27
+  },
+  {
+   "cluster": 5,
+   "n": 5,
+   "total": 1019,
+   "top": [
+    "Quadrotor",
+    "Pesticide application",
+    "Flight altitude",
+    "Crop protection",
+    "Pesticide spraying"
+   ],
+   "mean_year": 2020.63
+  }
+ ],
+ "edges_global": 1038,
+ "heat_years": [
+  2014,
+  2015,
+  2016,
+  2017,
+  2018,
+  2019,
+  2020,
+  2021,
+  2022,
+  2023,
+  2024
+ ],
+ "heat_established": [
+  "Precision agriculture",
+  "Vegetation indices",
+  "NDVI",
+  "Crop monitoring",
+  "Internet of things",
+  "Sustainable agriculture",
+  "Smart agriculture",
+  "Random forest",
+  "Multispectral imagery",
+  "Crop yield prediction"
+ ],
+ "heat_emerging": [
+  "YOLOv5",
+  "YOLOv8",
+  "XGBoost",
+  "Small object detection",
+  "U-Net",
+  "Artificial intelligence in agriculture",
+  "Object detection",
+  "Machine learning",
+  "Blockchain",
+  "Food security"
+ ]
+}

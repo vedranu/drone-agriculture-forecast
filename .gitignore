@@ -10,3 +10,13 @@ __pycache__/
 # build scratch
 paper/out/
 paper/tpl/
+
+itema_build/node_modules/
+keywords/openalex_api_key.txt
+keywords/run_*.txt
+itema_build/preview/
+itema_build/*.part
+itema_build/content_itema_v1_long.mjs
+itema_build/inspect_template.mjs
+matlab/itema_fig_*.txt
+~$*

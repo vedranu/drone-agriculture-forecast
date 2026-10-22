@@ -1,0 +1,101 @@
+keyword,label,freq_all,freq_recent,freq_2015_2019
+precision agriculture,Precision agriculture,2376,1000,508
+vegetation indices,Vegetation indices,1315,532,232
+ndvi,NDVI,885,293,241
+crop monitoring,Crop monitoring,729,272,174
+multispectral imagery,Multispectral imagery,532,174,121
+internet of things,Internet of things,480,252,41
+maize,Maize,469,162,116
+random forest,Random forest,452,213,46
+smart agriculture,Smart agriculture,397,213,34
+leaf area index,Leaf area index,395,142,92
+crop yield prediction,Crop yield prediction,359,164,73
+remote sensing,Remote sensing,334,133,94
+rgb images,RGB images,316,123,67
+sustainable agriculture,Sustainable agriculture,308,224,20
+convolutional neural networks,Convolutional neural networks,292,132,43
+high-throughput phenotyping,High-throughput phenotyping,277,87,81
+winter wheat,Winter wheat,271,97,53
+object detection,Object detection,270,155,16
+weed detection,Weed detection,268,103,65
+quadrotor,Quadrotor,264,75,81
+multispectral imaging,Multispectral imaging,252,81,70
+food security,Food security,250,156,20
+plant disease detection,Plant disease detection,249,120,38
+support vector machine,Support vector machine,241,96,41
+rice,Rice,235,100,48
+wheat,Wheat,230,81,54
+soil moisture,Soil moisture,221,87,40
+digital surface model,Digital surface model,219,61,80
+pesticide application,Pesticide application,209,81,33
+flight altitude,Flight altitude,207,66,48
+machine learning,Machine learning,207,125,12
+agricultural robotics,Agricultural robotics,206,98,34
+crop growth monitoring,Crop growth monitoring,206,93,40
+structure from motion,Structure from motion,204,43,89
+soybean,Soybean,197,72,42
+nitrogen fertilization,Nitrogen fertilization,195,56,55
+grain yield,Grain yield,192,64,45
+aerial imagery,Aerial imagery,186,46,61
+plant height,Plant height,184,65,49
+infrared thermography,Infrared thermography,178,58,52
+partial least squares regression,Partial least squares regression,174,75,22
+artificial intelligence in agriculture,Artificial intelligence in agriculture,173,120,10
+hyperspectral imaging,Hyperspectral imaging,173,63,51
+crop protection,Crop protection,172,52,55
+deep learning,Deep learning,169,85,16
+pesticide spraying,Pesticide spraying,167,54,43
+artificial intelligence,Artificial intelligence,166,95,16
+satellite imagery,Satellite imagery,166,70,31
+orthomosaic,Orthomosaic,160,46,56
+crop yield,Crop yield,157,77,26
+texture features,Texture features,156,85,27
+crop growth stages,Crop growth stages,154,67,29
+sentinel-2,Sentinel-2,153,66,19
+weed control,Weed control,151,77,29
+yield prediction,Yield prediction,148,72,23
+object-based image analysis,Object-based image analysis,146,26,58
+crop health monitoring,Crop health monitoring,145,75,17
+digital agriculture,Digital agriculture,143,72,17
+cotton,Cotton,141,54,29
+canopy cover,Canopy cover,138,44,35
+crop classification,Crop classification,137,55,29
+ndre,NDRE,137,70,10
+agricultural monitoring,Agricultural monitoring,131,57,25
+photogrammetry,Photogrammetry,130,35,48
+support vector regression,Support vector regression,130,70,9
+semantic segmentation,Semantic segmentation,129,63,9
+agricultural automation,Agricultural automation,128,53,18
+wireless sensor networks,Wireless sensor networks,128,34,39
+artificial neural networks,Artificial neural networks,127,40,20
+digital elevation model,Digital elevation model,126,34,42
+lidar,LiDAR,123,52,24
+crop phenotyping,Crop phenotyping,122,47,34
+random forest regression,Random forest regression,122,65,8
+droplet deposition,Droplet deposition,121,44,33
+chlorophyll content,Chlorophyll content,119,43,31
+aboveground biomass,Aboveground biomass,118,48,20
+canopy temperature,Canopy temperature,118,39,33
+agricultural technology adoption,Agricultural technology adoption,117,66,18
+plant phenotyping,Plant phenotyping,116,39,20
+transfer learning,Transfer learning,116,65,7
+image segmentation,Image segmentation,114,46,29
+agricultural spraying,Agricultural spraying,111,41,31
+ground control points,Ground control points,111,19,42
+technology adoption,Technology adoption,110,61,16
+canopy reflectance,Canopy reflectance,109,38,28
+crop disease detection,Crop disease detection,108,54,18
+feature selection,Feature selection,108,59,7
+spectral index,Spectral index,108,51,17
+canopy height,Canopy height,107,31,25
+irrigation management,Irrigation management,106,45,27
+point clouds,Point clouds,106,26,45
+paddy fields,Paddy fields,104,40,20
+potato,Potato,104,35,25
+vineyards,Vineyards,104,28,35
+canopy height model,Canopy height model,103,37,21
+aerial photography,Aerial photography,101,26,34
+leaf nitrogen content,Leaf nitrogen content,100,44,14
+yolov5,YOLOv5,100,72,0
+aboveground biomass estimation,Aboveground biomass estimation,98,42,19
+drought stress,Drought stress,96,43,11

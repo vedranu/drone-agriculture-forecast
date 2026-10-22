@@ -1,0 +1,61 @@
+keyword,label,freq,cluster,x,y,mean_year,mean_citations
+precision agriculture,Precision agriculture,2376,1,83.673,-118.209,2021.1,39
+vegetation indices,Vegetation indices,1315,2,24.73,219.229,2021.47,42.5
+ndvi,NDVI,885,2,-46.132,121.992,2020.8,36.2
+crop monitoring,Crop monitoring,729,1,148.984,-85.97,2020.77,40.8
+multispectral imagery,Multispectral imagery,532,2,0.453,159.268,2020.84,42.1
+internet of things,Internet of things,480,1,300.484,-372.889,2022.19,57.6
+maize,Maize,469,3,-115.802,129.742,2020.88,40.6
+random forest,Random forest,452,2,101.378,229.572,2022.03,44.3
+smart agriculture,Smart agriculture,397,1,287.771,-310.811,2022.17,54.7
+leaf area index,Leaf area index,395,2,-87.856,360.07,2020.96,55
+crop yield prediction,Crop yield prediction,359,2,104.654,23.536,2021.44,36.7
+remote sensing,Remote sensing,334,1,232.966,-210.459,2020.84,34.9
+rgb images,RGB images,316,2,-61.752,189.249,2021.36,49.8
+sustainable agriculture,Sustainable agriculture,308,1,177.672,-389.665,2022.73,24.9
+convolutional neural networks,Convolutional neural networks,292,4,25.464,-85.66,2021.85,47.7
+high-throughput phenotyping,High-throughput phenotyping,277,3,-219.496,91.784,2020.89,60.9
+winter wheat,Winter wheat,271,2,-9.968,371.762,2021.09,41.6
+object detection,Object detection,270,4,-126.307,-225.747,2022.41,42.2
+weed detection,Weed detection,268,4,-103.721,-167.387,2020.88,47.3
+quadrotor,Quadrotor,264,5,-106.797,-307.242,2020.17,20.2
+multispectral imaging,Multispectral imaging,252,4,-98.943,-73.163,2020.51,36.2
+food security,Food security,250,1,229.202,-331.071,2022.28,31.1
+plant disease detection,Plant disease detection,249,4,42.792,-194.252,2021.86,37.7
+support vector machine,Support vector machine,241,2,98.341,156.626,2021.62,44.7
+rice,Rice,235,3,-122.199,201.038,2020.97,29.5
+wheat,Wheat,230,3,-187.329,174.874,2020.73,45.7
+soil moisture,Soil moisture,221,2,151.891,80.002,2021.27,30
+digital surface model,Digital surface model,219,3,-312.588,210.454,2020.09,48.8
+pesticide application,Pesticide application,209,5,-59.345,-337.781,2021.16,26
+flight altitude,Flight altitude,207,5,-237.355,-16.476,2020.72,32.1
+machine learning,Machine learning,207,1,167.885,-263.635,2022.49,61.3
+agricultural robotics,Agricultural robotics,206,1,180.045,-471.041,2021.63,44.3
+crop growth monitoring,Crop growth monitoring,206,2,-61.364,288.087,2021.36,33.4
+structure from motion,Structure from motion,204,3,-335.522,167.322,2019.87,51.5
+soybean,Soybean,197,3,-153.497,88.822,2021.14,30.6
+nitrogen fertilization,Nitrogen fertilization,195,3,-124.746,284.173,2020.56,40.3
+grain yield,Grain yield,192,3,-251.664,205.199,2019.9,13.6
+aerial imagery,Aerial imagery,186,4,-58.497,-146.892,2019.98,39
+plant height,Plant height,184,3,-187.031,337.938,2020.67,45.6
+infrared thermography,Infrared thermography,178,4,-165.357,-116.502,2020.68,42.4
+partial least squares regression,Partial least squares regression,174,2,49.149,382.627,2021.87,52.1
+artificial intelligence in agriculture,Artificial intelligence in agriculture,173,1,250.09,-444.971,2022.83,29.8
+hyperspectral imaging,Hyperspectral imaging,173,4,-31.39,-80.58,2020.54,50.7
+crop protection,Crop protection,172,5,-71.259,-392.524,2020.27,22.3
+deep learning,Deep learning,169,4,34.359,-276.191,2022.17,60.8
+pesticide spraying,Pesticide spraying,167,5,-39.104,-419.943,2020.93,21.8
+artificial intelligence,Artificial intelligence,166,1,124.565,-368.407,2022.27,38.5
+satellite imagery,Satellite imagery,166,1,252.587,-155.367,2021.36,45.3
+orthomosaic,Orthomosaic,160,3,-286.178,94.786,2020.46,37
+crop yield,Crop yield,157,1,108.258,-268.658,2021.71,31.6
+texture features,Texture features,156,2,68.075,317.106,2021.96,34.9
+crop growth stages,Crop growth stages,154,2,-2.702,307.869,2021.27,47.1
+sentinel-2,Sentinel-2,153,2,157.052,216.267,2021.78,26.5
+weed control,Weed control,151,4,-55.534,-222.183,2021.26,24.3
+yield prediction,Yield prediction,148,3,21.215,50.357,2021.68,55.7
+object-based image analysis,Object-based image analysis,146,2,-103.524,57.759,2019.77,49.7
+crop health monitoring,Crop health monitoring,145,1,145.842,-180.991,2021.85,26.8
+digital agriculture,Digital agriculture,143,1,313.993,-426.37,2022.02,37.5
+cotton,Cotton,141,3,-194.845,238.242,2021,24.5
+canopy cover,Canopy cover,138,3,-236.818,283.723,2020.96,48.5
