@@ -1,61 +1,58 @@
 keyword,label,freq,cluster,x,y,mean_year,mean_citations
-precision agriculture,Precision agriculture,4498,3,76.712,53.911,2023.16,21.9
-vegetation indices,Vegetation indices,2083,1,-23.729,-292.394,2022.95,28.2
-ndvi,NDVI,1306,1,-135.78,-199.493,2022.3,25.3
-crop monitoring,Crop monitoring,1183,2,-24.251,54.782,2022.55,26.2
-internet of things,Internet of things,942,2,-3.696,371.215,2023.79,31.1
-random forest,Random forest,805,1,74.261,-314.987,2023.53,26.4
-smart agriculture,Smart agriculture,795,2,137.662,299.632,2023.83,28.8
-multispectral imagery,Multispectral imagery,785,1,33.411,-218.955,2022.35,29.7
-sustainable agriculture,Sustainable agriculture,737,2,-50.716,321.586,2024.29,12.2
-maize,Maize,714,1,-61.86,-236.535,2022.47,27.7
-remote sensing,Remote sensing,650,2,-59.714,222.268,2023.12,19.5
-food security,Food security,609,2,20.347,276.58,2024.16,14.8
-crop yield prediction,Crop yield prediction,599,1,49.553,-51.494,2023.07,23.3
-leaf area index,Leaf area index,584,1,-93.511,-361.089,2022.4,38.4
-convolutional neural networks,Convolutional neural networks,558,4,153.891,-31.594,2023.61,26.1
-plant disease detection,Plant disease detection,529,4,129.193,127.941,2023.78,19.4
-object detection,Object detection,498,4,295.297,18.121,2023.79,24.9
-artificial intelligence,Artificial intelligence,449,2,-131.367,298.789,2024.34,16.3
-rgb images,RGB images,441,1,84.026,-238.072,2022.52,36.8
-winter wheat,Winter wheat,438,1,-33.475,-383.421,2022.77,27.1
-artificial intelligence in agriculture,Artificial intelligence in agriculture,436,2,48.524,416.255,2024.39,13.5
-machine learning,Machine learning,436,2,-131.167,213.71,2024.09,30.8
-high-throughput phenotyping,High-throughput phenotyping,433,1,-206.601,-178.165,2022.57,39.9
-weed detection,Weed detection,425,4,162.017,34.245,2022.58,31.5
-multispectral imaging,Multispectral imaging,420,5,-185.198,6.114,2022.48,23.2
-agricultural robotics,Agricultural robotics,397,2,113.4,365.241,2023.46,24.7
-quadrotor,Quadrotor,371,3,268.917,82.852,2021.7,14.9
-rice,Rice,369,1,-117.699,-281.608,2022.64,19.5
-wheat,Wheat,368,1,-184.832,-244.376,2022.5,29.5
-deep learning,Deep learning,364,4,20.498,110.229,2023.97,30.3
-support vector machine,Support vector machine,363,1,133.255,-290.248,2022.89,30.8
-soil moisture,Soil moisture,355,1,-130.251,-114.383,2022.85,19.5
-yield prediction,Yield prediction,353,1,-49.181,-37.504,2023.9,25.3
-hyperspectral imaging,Hyperspectral imaging,341,5,-121.429,45.625,2022.96,28.8
-digital agriculture,Digital agriculture,338,2,-65.087,406.349,2024.01,16.6
-soybean,Soybean,319,1,-61.151,-182.226,2022.8,19.9
-infrared thermography,Infrared thermography,317,5,-190.497,69.944,2022.79,25.6
-flight altitude,Flight altitude,315,3,137.251,-185.241,2022.34,21.9
-texture features,Texture features,313,1,100.193,-390.288,2023.71,19.6
-lidar,LiDAR,310,5,-141.186,-53.081,2023.75,21.1
-nitrogen fertilization,Nitrogen fertilization,308,1,-155.995,-381.606,2022.32,26.7
-pesticide application,Pesticide application,307,3,242.556,137.645,2022.52,18.3
-crop health monitoring,Crop health monitoring,303,4,76.369,175.344,2023.74,14.3
-satellite imagery,Satellite imagery,303,2,-25.111,160.456,2023.19,26.9
-grain yield,Grain yield,297,1,-249.127,-302.325,2021.88,9.3
-digital surface model,Digital surface model,286,1,-77.307,-444.434,2021.35,37.7
-crop growth monitoring,Crop growth monitoring,280,1,13.647,-357.749,2022.41,26.1
-small object detection,Small object detection,270,4,340.598,71.254,2024.71,13.7
-partial least squares regression,Partial least squares regression,269,1,13.398,-430.396,2023.1,35.8
-aerial imagery,Aerial imagery,268,4,250.56,-40.845,2021.69,27.4
-sentinel-2,Sentinel-2,268,1,-7.535,-188.003,2023.38,16.3
-semantic segmentation,Semantic segmentation,267,4,224.396,-80.108,2023.96,19.4
-edge computing,Edge computing,266,4,163.105,222.475,2024.69,17
-crop protection,Crop protection,263,3,211.462,182.344,2022.09,15.6
-structure from motion,Structure from motion,259,1,-119.466,-442.329,2021.05,40.9
-plant height,Plant height,257,1,-189.99,-343.087,2022.02,33.3
-smallholder farmers,Smallholder farmers,257,2,51.384,330.311,2024.54,6.9
-crop yield,Crop yield,254,2,-124.968,144.264,2023.11,20.3
-transfer learning,Transfer learning,253,4,228.893,21.197,2024.15,26.7
-weed control,Weed control,249,4,31.506,11.815,2022.93,15.4
+precision agriculture,Precision agriculture,4498,2,103.737,56.093,2023.16,21.9
+vegetation indices,Vegetation indices,2083,1,111.339,-264.651,2022.95,28.2
+ndvi,NDVI,1306,1,102.199,-199.482,2022.3,25.3
+crop monitoring,Crop monitoring,1183,3,52.138,44.394,2022.55,26.2
+internet of things,Internet of things,942,3,25.352,366.04,2023.79,31.1
+random forest,Random forest,805,1,222.55,-247.522,2023.53,26.4
+smart agriculture,Smart agriculture,795,3,-6.069,303.456,2023.83,28.8
+multispectral imagery,Multispectral imagery,785,1,38.349,-202.691,2022.35,29.7
+sustainable agriculture,Sustainable agriculture,737,3,80.611,291.516,2024.29,12.2
+maize,Maize,714,1,-6.55,-265.533,2022.47,27.7
+remote sensing,Remote sensing,650,4,82.609,199.658,2023.12,19.5
+food security,Food security,609,3,159.748,242.133,2024.16,14.8
+crop yield prediction,Crop yield prediction,599,4,158.929,-4.389,2023.07,23.3
+leaf area index,Leaf area index,584,1,120.038,-386.266,2022.4,38.4
+convolutional neural networks,Convolutional neural networks,558,5,-105.277,34.394,2023.61,26.1
+plant disease detection,Plant disease detection,529,5,-56.363,128.317,2023.78,19.4
+object detection,Object detection,498,2,-274.557,54.178,2023.79,24.9
+artificial intelligence,Artificial intelligence,449,4,-58.793,270.487,2024.34,16.3
+rgb images,RGB images,441,1,-34.497,-212.62,2022.52,36.8
+winter wheat,Winter wheat,438,1,193.651,-312.271,2022.77,27.1
+artificial intelligence in agriculture,Artificial intelligence in agriculture,436,3,129.448,361.479,2024.39,13.5
+machine learning,Machine learning,436,4,2.237,202.163,2024.09,30.8
+high-throughput phenotyping,High-throughput phenotyping,433,1,-95.111,-219.883,2022.57,39.9
+weed detection,Weed detection,425,2,-193.964,8.517,2022.58,31.5
+multispectral imaging,Multispectral imaging,420,5,-15.329,-62.633,2022.48,23.2
+agricultural robotics,Agricultural robotics,397,3,-40.264,362.431,2023.46,24.7
+quadrotor,Quadrotor,371,2,-245.97,104.749,2021.7,14.9
+rice,Rice,369,1,-22.189,-334.573,2022.64,19.5
+wheat,Wheat,368,1,-81.498,-313.097,2022.5,29.5
+deep learning,Deep learning,364,4,-121.028,127.675,2023.97,30.3
+support vector machine,Support vector machine,364,1,175.597,-208.274,2022.9,30.7
+soil moisture,Soil moisture,355,1,186.781,-102.282,2022.85,19.5
+yield prediction,Yield prediction,353,2,90.392,-51.215,2023.9,25.3
+hyperspectral imaging,Hyperspectral imaging,341,5,-16.027,2.111,2022.96,28.8
+digital agriculture,Digital agriculture,338,3,92.166,399.536,2024.01,16.6
+soybean,Soybean,319,1,-125.489,-261.275,2022.8,19.9
+infrared thermography,Infrared thermography,317,5,-94.627,-28.504,2022.79,25.6
+flight altitude,Flight altitude,315,2,-191.508,-170.857,2022.34,21.9
+texture features,Texture features,313,1,143.108,-329.138,2023.71,19.6
+lidar,LiDAR,310,2,-85.846,-94.735,2023.75,21.1
+nitrogen fertilization,Nitrogen fertilization,308,1,73.624,-417.546,2022.32,26.7
+pesticide application,Pesticide application,307,2,-230.444,150.922,2022.52,18.3
+crop health monitoring,Crop health monitoring,303,5,85.884,131.464,2023.74,14.3
+satellite imagery,Satellite imagery,303,4,30.137,133.512,2023.19,26.9
+grain yield,Grain yield,297,1,-87.641,-403.926,2021.88,9.3
+crop growth monitoring,Crop growth monitoring,280,1,76.466,-331.32,2022.41,26.1
+partial least squares regression,Partial least squares regression,269,1,204.525,-376.741,2023.1,35.8
+aerial imagery,Aerial imagery,268,2,-258.008,15.68,2021.69,27.4
+sentinel-2,Sentinel-2,268,1,206.858,-167.392,2023.38,16.3
+semantic segmentation,Semantic segmentation,267,2,-257.592,-40.026,2023.96,19.4
+edge computing,Edge computing,266,3,-136.891,239.154,2024.69,17
+crop protection,Crop protection,263,2,-212.478,198.063,2022.09,15.6
+plant height,Plant height,257,1,18.373,-387.998,2022.02,33.3
+smallholder farmers,Smallholder farmers,257,3,173.406,302.102,2024.54,6.9
+crop yield,Crop yield,254,2,166.139,110.092,2023.11,20.3
+transfer learning,Transfer learning,253,5,-179.514,69.513,2024.15,26.7
+weed control,Weed control,249,2,-175.456,-53.907,2022.93,15.4

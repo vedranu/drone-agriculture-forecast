@@ -25,7 +25,14 @@ mname = struct('exponential', 'Exponential', 'logistic', 'Logistic', 'gompertz',
 f1 = figure('Units', 'centimeters', 'Position', [2 2 16 7.2], 'Color', 'w');
 tl = tiledlayout(f1, 1, 2, 'TileSpacing', 'compact', 'Padding', 'compact');
 ax = nexttile(tl); hold(ax, 'on');
-B = RES.count.boot; Bs = Ssat.RES.count.boot;
+FXf = fullfile(root, 'results_itema', 'fixed', 'forecast_fixed.mat');   % consistent model average (itema_forecast_fix.m)
+if exist(FXf, 'file')
+    FX = load(FXf); FX = FX.FX;
+    B = struct('avg_q05', FX.count.avg_q05, 'avg_q95', FX.count.avg_q95, 'avg_q50', FX.count.avg_point);
+    Bs = struct('avg_q05', FX.count.sat_q05, 'avg_q95', FX.count.sat_q95, 'avg_q50', FX.count.sat_point);
+else
+    B = RES.count.boot; Bs = Ssat.RES.count.boot;
+end
 h1 = fill(ax, [tf; flipud(tf)], [B.avg_q05(:); flipud(B.avg_q95(:))], CAVG, 'FaceAlpha', 0.13, 'EdgeColor', 'none');
 h2 = fill(ax, [tf; flipud(tf)], [Bs.avg_q05(:); flipud(Bs.avg_q95(:))], CSAT, 'FaceAlpha', 0.16, 'EdgeColor', 'none');
 hm = gobjects(1, numel(opt.models));
@@ -43,7 +50,11 @@ legend(ax, [ho hm ha h1 hs h2], [{'Observed'}, cellfun(@(s) mname.(s), opt.model
     {'Model average', '90 % interval', 'Saturating average', '90 % interval'}], 'Location', 'northwest', 'FontSize', 5.5, 'Box', 'off', 'NumColumns', 2);
 
 ax = nexttile(tl); hold(ax, 'on');
-B = RES.share.boot;
+if exist('FX', 'var')
+    B = struct('avg_q05', FX.share.avg_q05, 'avg_q95', FX.share.avg_q95, 'avg_q50', FX.share.avg_point);
+else
+    B = RES.share.boot;
+end
 h1 = fill(ax, [tf; flipud(tf)], 1000 * [B.avg_q05(:); flipud(B.avg_q95(:))], CAVG, 'FaceAlpha', 0.13, 'EdgeColor', 'none');
 hm = gobjects(1, numel(opt.models_share));
 for m = 1:numel(opt.models_share)
@@ -89,9 +100,8 @@ f3 = figure('Units', 'centimeters', 'Position', [2 2 16 9.6], 'Color', 'w');
 ax = axes(f3, 'Position', [0.005 0.11 0.99 0.885]); hold(ax, 'on'); axis(ax, 'equal', 'off');
 pad = 0.11 * range(Tn.x); xlim(ax, [min(Tn.x) - pad, max(Tn.x) + pad]); ylim(ax, [min(Tn.y) - 0.05 * range(Tn.x), max(Tn.y) + 0.05 * range(Tn.x)]);
 % thematic cluster names, assigned from marker keywords (robust to cluster renumbering)
-NAMEMAP = {'pesticide application', 'Spraying and flight operations'; 'hyperspectral imaging', 'Imaging sensors'; 'object detection', 'Computer vision'; ...
-    'convolutional neural networks', 'Computer vision'; 'vegetation indices', 'Spectral monitoring and phenotyping'; 'ndvi', 'Spectral monitoring and phenotyping'; ...
-    'internet of things', 'Smart farming'; 'precision agriculture', 'Smart farming'};
+NAMEMAP = {'pesticide application', 'Site-specific field operations'; 'plant disease detection', 'Disease detection and imaging'; ...
+    'crop yield prediction', 'AI and yield prediction'; 'internet of things', 'Smart farming'; 'vegetation indices', 'Spectral monitoring and phenotyping'};
 CLUNAME = cell(1, nclu);
 for c = 1:nclu
     kws = lower(Tn.label(Tn.cluster == c));
@@ -127,7 +137,7 @@ for c = 1:nclu
     ll(c) = sprintf('C%d (%d keywords): %s, %s', c, height(sel), sel.label(1), sel.label(min(2, height(sel))));
 end
 ll = string(arrayfun(@(c) sprintf('C%d %s (%d)', c, CLUNAME{c}, sum(Tn.cluster == c)), 1:nclu, 'UniformOutput', false));
-lg = legend(ax, hl, ll, 'FontSize', 6.4, 'Box', 'off', 'NumColumns', min(nclu, 3), 'Units', 'normalized');
+lg = legend(ax, hl, ll, 'FontSize', 6.4, 'Box', 'off', 'NumColumns', 2, 'Units', 'normalized');
 lg.Position(1) = (1 - lg.Position(3)) / 2; lg.Position(2) = 0.005;
 save_fig(f3, out, 'fig3_cooccurrence_network');
 
@@ -195,9 +205,9 @@ oM = find(isE); [~, a] = sort(firstY(oM)); oM = oM(a);
 ord = [oE; oM]; V = V(ord, :);
 rl = H.label(ord); rl(H.group(ord) == "emerging") = rl(H.group(ord) == "emerging") + " *";
 xl = string(hy);
-f5 = figure('Units', 'centimeters', 'Position', [2 2 16 9.6], 'Color', 'w');
+f5 = figure('Units', 'centimeters', 'Position', [2 2 12.5 7.6], 'Color', 'w');   % printed at ~10 cm: labels stay >= 5.5 pt
 hh = heatmap(f5, xl, rl, round(V, 1), 'Colormap', heat_cmap(256), 'ColorScaling', 'scaledrows', ...
-    'CellLabelFormat', '%.0f', 'FontSize', 6, 'GridVisible', 'off');
+    'CellLabelFormat', '%.0f', 'FontSize', 7, 'GridVisible', 'off');
 hh.XLabel = 'Year'; hh.YLabel = ''; hh.Title = '';
 save_fig(f5, out, 'fig5_keyword_heatmap');
 fprintf('Figures written to %s\n', out);

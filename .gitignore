@@ -20,3 +20,9 @@ itema_build/content_itema_v1_long.mjs
 itema_build/inspect_template.mjs
 matlab/itema_fig_*.txt
 ~$*
+
+# review correspondence and local diagnostics (not public)
+paper_itema/*Odgovor_na_recenziju*
+itema_build/diag*.ps1
+matlab/*_err.txt
+results_itema/*_err.txt

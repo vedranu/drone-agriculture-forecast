@@ -1,0 +1,116 @@
+{
+ "seeds": 50,
+ "resolution": 1.25,
+ "nodes": 57,
+ "main_threshold": 50,
+ "isolated_removed": [
+  "digital surface model",
+  "small object detection",
+  "structure from motion"
+ ],
+ "period_thresholds": [
+  {
+   "period": "2005-2014",
+   "records": 760,
+   "threshold": 3
+  },
+  {
+   "period": "2015-2019",
+   "records": 3145,
+   "threshold": 7
+  },
+  {
+   "period": "2020-2022",
+   "records": 4718,
+   "threshold": 11
+  },
+  {
+   "period": "2023-2024",
+   "records": 5076,
+   "threshold": 11
+  },
+  {
+   "period": "2025-2026",
+   "records": 8658,
+   "threshold": 19
+  }
+ ],
+ "rows": [
+  {
+   "threshold": 3,
+   "edges": 1198,
+   "density": 0.751,
+   "isolated": 0,
+   "Q_mean": 0.216,
+   "Q_min": 0.216,
+   "Q_max": 0.216,
+   "clusters_ge3_min": 5,
+   "clusters_ge3_max": 5,
+   "NMI_pairwise_mean": 1,
+   "NMI_vs_main_mean": 0.674
+  },
+  {
+   "threshold": 10,
+   "edges": 729,
+   "density": 0.457,
+   "isolated": 0,
+   "Q_mean": 0.276,
+   "Q_min": 0.269,
+   "Q_max": 0.278,
+   "clusters_ge3_min": 5,
+   "clusters_ge3_max": 5,
+   "NMI_pairwise_mean": 0.959,
+   "NMI_vs_main_mean": 0.595
+  },
+  {
+   "threshold": 25,
+   "edges": 385,
+   "density": 0.241,
+   "isolated": 0,
+   "Q_mean": 0.354,
+   "Q_min": 0.351,
+   "Q_max": 0.355,
+   "clusters_ge3_min": 5,
+   "clusters_ge3_max": 5,
+   "NMI_pairwise_mean": 0.953,
+   "NMI_vs_main_mean": 0.714
+  },
+  {
+   "threshold": 50,
+   "edges": 183,
+   "density": 0.115,
+   "isolated": 0,
+   "Q_mean": 0.413,
+   "Q_min": 0.41,
+   "Q_max": 0.413,
+   "clusters_ge3_min": 5,
+   "clusters_ge3_max": 5,
+   "NMI_pairwise_mean": 0.987,
+   "NMI_vs_main_mean": 0.946
+  },
+  {
+   "threshold": 100,
+   "edges": 76,
+   "density": 0.048,
+   "isolated": 14,
+   "Q_mean": 0.388,
+   "Q_min": 0.388,
+   "Q_max": 0.388,
+   "clusters_ge3_min": 4,
+   "clusters_ge3_max": 4,
+   "NMI_pairwise_mean": 1,
+   "NMI_vs_main_mean": 0.518
+  }
+ ],
+ "synonyms_applied": {
+  "geobia": "object-based image analysis",
+  "energy conservation (physics)": "energy conservation",
+  "smap": "soil moisture active passive",
+  "population decline (ecology)": "population decline",
+  "thermal stress (biology)": "thermal stress",
+  "complete systematic land registration (ptsl)": "complete systematic land registration",
+  "svm": "support vector machine",
+  "soil moisture active passive (smap)": "soil moisture active passive",
+  "environmental, social and governance (esg)": "environmental, social and governance"
+ }
+}

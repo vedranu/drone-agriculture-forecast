@@ -8,83 +8,87 @@
  "n_works": 22357,
  "n_with_keywords": 22310,
  "mean_kw_per_work": 8.48,
- "distinct_keywords": 46621,
+ "distinct_keywords": 46615,
  "global_clusters": [
   {
    "cluster": 1,
-   "n": 25,
-   "total": 12852,
+   "n": 21,
+   "total": 11356,
    "top": [
     "Vegetation indices",
     "NDVI",
     "Random forest",
     "Multispectral imagery",
     "Maize",
-    "Crop yield prediction",
     "Leaf area index",
-    "RGB images"
+    "RGB images",
+    "Winter wheat"
    ],
-   "mean_year": 2022.69
+   "mean_year": 2022.7
   },
   {
    "cluster": 2,
-   "n": 14,
-   "total": 7786,
+   "n": 13,
+   "total": 8378,
+   "top": [
+    "Precision agriculture",
+    "Object detection",
+    "Weed detection",
+    "Quadrotor",
+    "Yield prediction",
+    "Flight altitude",
+    "LiDAR",
+    "Pesticide application"
+   ],
+   "mean_year": 2023.04
+  },
+  {
+   "cluster": 3,
+   "n": 10,
+   "total": 5960,
    "top": [
     "Crop monitoring",
     "Internet of things",
     "Smart agriculture",
     "Sustainable agriculture",
-    "Remote sensing",
     "Food security",
-    "Artificial intelligence",
-    "Artificial intelligence in agriculture"
+    "Artificial intelligence in agriculture",
+    "Agricultural robotics",
+    "Digital agriculture"
    ],
-   "mean_year": 2023.68
-  },
-  {
-   "cluster": 3,
-   "n": 5,
-   "total": 5754,
-   "top": [
-    "Precision agriculture",
-    "Quadrotor",
-    "Flight altitude",
-    "Pesticide application",
-    "Crop protection"
-   ],
-   "mean_year": 2022.94
+   "mean_year": 2023.76
   },
   {
    "cluster": 4,
-   "n": 12,
-   "total": 4250,
+   "n": 6,
+   "total": 2801,
    "top": [
-    "Convolutional neural networks",
-    "Plant disease detection",
-    "Object detection",
-    "Weed detection",
+    "Remote sensing",
+    "Crop yield prediction",
+    "Artificial intelligence",
+    "Machine learning",
     "Deep learning",
-    "Crop health monitoring",
-    "Small object detection",
-    "Aerial imagery"
+    "Satellite imagery"
    ],
-   "mean_year": 2023.62
+   "mean_year": 2023.57
   },
   {
    "cluster": 5,
-   "n": 4,
-   "total": 1388,
+   "n": 7,
+   "total": 2721,
    "top": [
+    "Convolutional neural networks",
+    "Plant disease detection",
     "Multispectral imaging",
     "Hyperspectral imaging",
     "Infrared thermography",
-    "LiDAR"
+    "Crop health monitoring",
+    "Transfer learning"
    ],
-   "mean_year": 2022.95
+   "mean_year": 2023.36
   }
  ],
- "edges_global": 1266,
+ "edges_global": 183,
  "heat_years": [
   2014,
   2015,

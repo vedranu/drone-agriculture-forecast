@@ -18,7 +18,8 @@ fs.mkdirSync(OUT, { recursive: true });
 const PERIODS = [[2005, 2014], [2015, 2019], [2020, 2022], [2023, 2024], [2025, 2026]];
 const TOP_GLOBAL = 60;          // nodes in the overall co-occurrence map
 const TOP_PERIOD = 50;          // keywords per period in the thematic evolution
-const MIN_COOC = 3;             // minimum co-occurrence for an edge
+const MIN_COOC = 50;            // minimum co-occurrence for an edge in the overall map (revision: density 0.10)
+const COOC_RATE = 50 / 22357;   // period maps: proportional threshold, max(3, round(rate x records))
 const HEAT_YEARS = [2014, 2026];
 const SEED = 20261022;
 const RES_GLOBAL = 1.25;      // Louvain resolution for the overall map
@@ -48,6 +49,29 @@ console.log('  removed (top topics):', Object.entries(removedTopics).sort((a, b)
 const STOP = /\b(drones?|uavs?|uas|unmanned|rpas|remotely piloted|aerial vehicles?|aerial systems?|multirotor|quadcopters?|multicopters?)\b/i;
 const STOP_EXACT = new Set(['agriculture', 'agricultural', 'farming', 'crop', 'crops']);
 const ACR = { ndvi: 'NDVI', lidar: 'LiDAR', yolo: 'YOLO', iot: 'IoT', gis: 'GIS', rgb: 'RGB', cnn: 'CNN', gnss: 'GNSS', rtk: 'RTK', gps: 'GPS', lai: 'LAI', sar: 'SAR', ai: 'AI', '3d': '3D', uav: 'UAV', ndre: 'NDRE', svm: 'SVM', yolov5: 'YOLOv5', yolov7: 'YOLOv7', yolov8: 'YOLOv8', yolov11: 'YOLOv11', yolov10: 'YOLOv10', xgboost: 'XGBoost', 'u-net': 'U-Net', sfm: 'SfM', lstm: 'LSTM', 'lidar-based': 'LiDAR-based', ml: 'ML', dl: 'DL' };
+// ---- synonym thesaurus (ITEMA revision) ----
+// 1) "long form (ACR)" -> long form, and the bare acronym -> long form (learned from the data)
+// 2) manual synonyms; 3) hyphen variants of multi-word terms
+const SYN = { 'precision farming': 'precision agriculture', 'smart farming': 'smart agriculture', 'digital farming': 'digital agriculture',
+  'structure-from-motion': 'structure from motion', 'normalized difference vegetation index': 'ndvi', 'vegetation index': 'vegetation indices',
+  'convolutional neural network': 'convolutional neural networks', 'cnn': 'convolutional neural networks', 'iot': 'internet of things',
+  'ai': 'artificial intelligence', 'ml': 'machine learning', 'dl': 'deep learning', 'rf': 'random forest', 'svm': 'support vector machine',
+  'lai': 'leaf area index', 'sfm': 'structure from motion', 'obia': 'object-based image analysis', 'geobia': 'object-based image analysis',
+  'dsm': 'digital surface model', 'you only look once': 'yolo' };
+const ACRMAP = new Map(); const PAREN = /^(.*?)\s*\(([a-z0-9][a-z0-9\-]{1,9})\)$/;
+// a parenthetical is an acronym only if its letters are the initials (in order) of the long form's words
+const isAcronym = (acr, long) => { const ini = long.split(/[\s\-]+/).filter(Boolean).map((t) => t[0]).join(''); const a = acr.replace(/[^a-z0-9]/g, ''); let j = 0; for (const ch of ini) if (ch === a[j]) j++; return a.length >= 2 && j === a.length && a[0] === ini[0]; };
+for (const w of works) for (const [k] of w.kw) { const m = k.toLowerCase().trim().match(PAREN); if (m && m[1].includes(' ') && isAcronym(m[2], m[1].trim())) ACRMAP.set(m[2], m[1].trim()); }
+const SYNLOG = new Map();
+function norm1(k) {
+  let s = k.toLowerCase().trim().replace(/\s+/g, ' ');
+  const m = s.match(PAREN); if (m && m[1].includes(' ')) s = m[1].trim();
+  if (SYN[s]) s = SYN[s]; else if (ACRMAP.has(s)) s = ACRMAP.get(s);
+  if (SYN[s]) s = SYN[s];
+  const k0 = k.toLowerCase().trim(); if (s !== k0) SYNLOG.set(k0, s);
+  return s;
+}
+for (const w of works) w.kw = w.kw.map(([k, sc]) => [norm1(k), sc]);
 const raw = new Map();
 for (const w of works) for (const [k] of w.kw) { const key = k.toLowerCase().trim(); raw.set(key, (raw.get(key) || 0) + 1); }
 const canon = new Map(); // key -> canonical key (merge simple plurals)
@@ -78,10 +102,10 @@ function cooc(ws, keys) {
   return [...C.entries()].map(([id, c]) => [Math.floor(id / 10000), id % 10000, c]);
 }
 // association strength (van Eck & Waltman 2009): s_ij = N c_ij / (f_i f_j)
-function buildGraph(ws, keys, freq) {
+function buildGraph(ws, keys, freq, minC = MIN_COOC) {
   const N = ws.length; const G = new Graph({ type: 'undirected' });
   keys.forEach((k) => G.addNode(k, { freq: freq.get(k) }));
-  const edges = cooc(ws, keys).filter((e) => e[2] >= MIN_COOC);
+  const edges = cooc(ws, keys).filter((e) => e[2] >= minC);
   for (const [i, j, c] of edges) G.addEdge(keys[i], keys[j], { c, weight: (N * c) / (freq.get(keys[i]) * freq.get(keys[j])) });
   // isolated nodes: attach to strongest partner with weight from c>=1 to keep them in a cluster
   return G;
@@ -94,7 +118,9 @@ const meanYear = (ws, k) => { let s = 0, n = 0; for (const w of ws) if (w.K.incl
 
 // ---------- 1) overall co-occurrence map ----------
 const freqAll = docFreq(works);
-const gKeys = topK(freqAll, TOP_GLOBAL);
+const gKeys0 = topK(freqAll, TOP_GLOBAL);
+const G0 = buildGraph(works, gKeys0, freqAll);
+const gKeys = gKeys0.filter((k) => G0.degree(k) > 0); const ISOLATED = gKeys0.filter((k) => G0.degree(k) === 0);
 const G = buildGraph(works, gKeys, freqAll);
 const comm = clusters(G, SEED, RES_GLOBAL);
 // clusters with fewer than 3 keywords are merged into the cluster they co-occur with most (same rule as the period maps)
@@ -113,7 +139,10 @@ const cTot = {}; for (const k of gKeys) cTot[comm[k]] = (cTot[comm[k]] || 0) + f
 const order = Object.keys(cTot).sort((a, b) => cTot[b] - cTot[a]);
 const cMap = Object.fromEntries(order.map((c, i) => [c, i + 1]));
 circular.assign(G, { scale: 100 });
-forceAtlas2.assign(G, { iterations: 1500, getEdgeWeight: 'weight', settings: { gravity: 1.5, scalingRatio: 12, strongGravityMode: false, edgeWeightInfluence: 1, linLogMode: false, adjustSizes: false, barnesHutOptimize: false, slowDown: 2 } });
+// layout on the full co-occurrence graph (threshold 3) so that themes separate well; clusters and drawn links use the threshold-50 graph
+const GL = buildGraph(works, gKeys, freqAll, 3); circular.assign(GL, { scale: 100 });
+forceAtlas2.assign(GL, { iterations: 1500, getEdgeWeight: 'weight', settings: { gravity: 1.5, scalingRatio: 12, strongGravityMode: false, edgeWeightInfluence: 1, linLogMode: false, adjustSizes: false, barnesHutOptimize: false, slowDown: 2 } });
+GL.forEachNode((k, a) => { G.setNodeAttribute(k, 'x', a.x); G.setNodeAttribute(k, 'y', a.y); });
 const kwYearMean = Object.fromEntries(gKeys.map((k) => [k, meanYear(works, k)]));
 const nodeRows = [['keyword', 'label', 'freq', 'cluster', 'x', 'y', 'mean_year', 'mean_citations']];
 for (const k of gKeys) {
@@ -131,12 +160,12 @@ console.log('Global clusters:'); for (const c of clusterSummary) console.log(`  
 // ---------- 2) thematic evolution of keyword clusters ----------
 const evoNodes = [['period', 'period_label', 'cluster_id', 'label', 'n_keywords', 'occurrences', 'share_of_period', 'n_docs_period', 'keywords']];
 const evoLinks = [['from_id', 'to_id', 'shared_keywords', 'inclusion_index', 'weighted_occ', 'shared']];
-const periodClusters = [];
+const periodClusters = []; const PERIOD_T = [];
 PERIODS.forEach(([a, b], pi) => {
   const ws = works.filter((w) => w.y >= a && w.y <= b);
   if (ws.length < 50) return;
   const fr = docFreq(ws); const keys = topK(fr, TOP_PERIOD);
-  const Gp = buildGraph(ws, keys, fr); const cm = clusters(Gp, SEED + pi, RES_PERIOD);
+  const tP = Math.max(3, Math.round(COOC_RATE * ws.length)); const Gp = buildGraph(ws, keys, fr, tP); const cm = clusters(Gp, SEED + pi, RES_PERIOD); PERIOD_T.push({ period: (a === b ? String(a) : a + '-' + b), records: ws.length, threshold: tP });
   const groups = {}; for (const k of keys) (groups[cm[k]] ||= []).push(k);
   // clusters with fewer than 3 keywords are merged into their most strongly connected larger cluster
   const big = Object.keys(groups).filter((c) => groups[c].length >= 3);
@@ -202,3 +231,39 @@ fs.writeFileSync(path.join(OUT, 'summary.json'), JSON.stringify(summary, null, 1
 console.log('Heatmap established:', established.map(label).join('; '));
 console.log('Heatmap emerging:', emerging.map(label).join('; '));
 console.log(JSON.stringify({ n: summary.n_works, withKW: summary.n_with_keywords, meanKW: summary.mean_kw_per_work, distinct: summary.distinct_keywords, edges: summary.edges_global }));
+
+// ---------- 4) network validation (ITEMA revision): density, modularity, stability across seeds ----------
+function nmi(a, b) { // normalized mutual information of two labelings (same key order)
+  const n = a.length; const ca = {}, cb = {}, cab = {};
+  for (let i = 0; i < n; i++) { ca[a[i]] = (ca[a[i]] || 0) + 1; cb[b[i]] = (cb[b[i]] || 0) + 1; const k = a[i] + '|' + b[i]; cab[k] = (cab[k] || 0) + 1; }
+  const H = (c) => -Object.values(c).reduce((s, v) => s + (v / n) * Math.log(v / n), 0);
+  let I = 0; for (const [k, v] of Object.entries(cab)) { const [x, y] = k.split('|'); I += (v / n) * Math.log((v * n) / (ca[x] * cb[y])); }
+  const d = (H(ca) + H(cb)) / 2; return d === 0 ? 1 : I / d;
+}
+function buildGraphT(ws, keys, freq, t) {
+  const N = ws.length; const Gx = new Graph({ type: 'undirected' });
+  keys.forEach((k) => Gx.addNode(k));
+  for (const [i, j, c] of cooc(ws, keys)) if (c >= t) Gx.addEdge(keys[i], keys[j], { c, weight: (N * c) / (freq.get(keys[i]) * freq.get(keys[j])) });
+  return Gx;
+}
+const VAL = []; const NSEED = 50;
+const refThemes = (comm0) => gKeys.map((k) => comm0[k]);
+for (const t of [3, 10, 25, 50, 100]) {
+  const Gt = buildGraphT(works, gKeys, freqAll, t);
+  const nIso = Gt.nodes().filter((k) => Gt.degree(k) === 0).length;
+  const parts = []; const qs = [];
+  for (let s = 0; s < NSEED; s++) {
+    const det = louvain.detailed(Gt, { getEdgeWeight: 'weight', rng: mulberry32(SEED + 1000 * s), resolution: RES_GLOBAL });
+    parts.push(gKeys.map((k) => det.communities[k])); qs.push(det.modularity);
+  }
+  let pair = 0, np = 0; for (let a = 0; a < NSEED; a++) for (let b = a + 1; b < NSEED; b++) { pair += nmi(parts[a], parts[b]); np++; }
+  const sizes = parts.map((p) => { const c = {}; p.forEach((x) => (c[x] = (c[x] || 0) + 1)); return Object.values(c).filter((v) => v >= 3).length; });
+  const vsMain = parts.map((p) => nmi(p, gKeys.map((k) => comm[k])));
+  const row = { threshold: t, edges: Gt.size, density: +(Gt.size / (gKeys.length * (gKeys.length - 1) / 2)).toFixed(3), isolated: nIso,
+    Q_mean: +(qs.reduce((s, x) => s + x, 0) / NSEED).toFixed(3), Q_min: +Math.min(...qs).toFixed(3), Q_max: +Math.max(...qs).toFixed(3),
+    clusters_ge3_min: Math.min(...sizes), clusters_ge3_max: Math.max(...sizes), NMI_pairwise_mean: +(pair / np).toFixed(3),
+    NMI_vs_main_mean: +(vsMain.reduce((s, x) => s + x, 0) / NSEED).toFixed(3) };
+  VAL.push(row); console.log('VALIDATION', JSON.stringify(row));
+}
+fs.writeFileSync(path.join(OUT, 'network_validation.json'), JSON.stringify({ seeds: NSEED, resolution: RES_GLOBAL, nodes: gKeys.length, main_threshold: MIN_COOC, isolated_removed: ISOLATED, period_thresholds: PERIOD_T, rows: VAL,
+  synonyms_applied: Object.fromEntries([...SYNLOG.entries()].filter(([a, b]) => freqAll.has(b)).slice(0, 400)) }, null, 1));

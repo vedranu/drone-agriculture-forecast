@@ -29,7 +29,7 @@ quadrotor,Quadrotor,371,107,81
 rice,Rice,369,134,48
 wheat,Wheat,368,138,54
 deep learning,Deep learning,364,195,16
-support vector machine,Support vector machine,363,122,41
+support vector machine,Support vector machine,364,123,41
 soil moisture,Soil moisture,355,134,40
 yield prediction,Yield prediction,353,205,23
 hyperspectral imaging,Hyperspectral imaging,341,168,51
@@ -85,8 +85,8 @@ random forest regression,Random forest regression,192,70,8
 canopy cover,Canopy cover,189,51,35
 canopy temperature,Canopy temperature,189,71,33
 pest detection,Pest detection,188,121,8
+object-based image analysis,Object-based image analysis,184,36,59
 environmental monitoring,Environmental monitoring,183,90,23
-object-based image analysis,Object-based image analysis,181,35,58
 technology adoption barriers,Technology adoption barriers,181,127,2
 computer vision,Computer vision,180,107,8
 digital elevation model,Digital elevation model,178,52,42

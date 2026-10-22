@@ -2,16 +2,11 @@ source,target,cooc,assoc_strength
 precision agriculture,food security,323,2.6362
 precision agriculture,soil moisture,76,1.0641
 precision agriculture,smallholder farmers,148,2.8623
-food security,soil moisture,10,1.0341
 food security,smallholder farmers,60,8.5707
-soil moisture,smallholder farmers,3,0.7351
-rice,plant height,14,3.3005
 precision agriculture,crop monitoring,643,2.7016
 precision agriculture,sustainable agriculture,451,3.0416
 crop monitoring,sustainable agriculture,141,3.6156
-crop monitoring,smallholder farmers,27,1.9855
 sustainable agriculture,smallholder farmers,56,6.61
-pesticide application,crop protection,30,8.3069
 multispectral imagery,crop yield prediction,53,2.52
 precision agriculture,vegetation indices,519,1.2384
 precision agriculture,ndvi,322,1.2255
@@ -23,38 +18,19 @@ vegetation indices,leaf area index,224,4.1168
 ndvi,multispectral imagery,158,3.4455
 ndvi,leaf area index,85,2.4916
 multispectral imagery,leaf area index,59,2.8773
-winter wheat,nitrogen fertilization,31,5.1375
-winter wheat,grain yield,18,3.0935
-nitrogen fertilization,grain yield,28,6.8433
 sustainable agriculture,food security,170,8.4679
-crop monitoring,leaf area index,47,1.5209
-crop monitoring,winter wheat,47,2.0279
 leaf area index,winter wheat,60,5.2442
 precision agriculture,aerial imagery,77,1.4281
 precision agriculture,pesticide application,117,1.8943
 crop monitoring,multispectral imaging,58,2.6098
-crop monitoring,hyperspectral imaging,26,1.4409
-crop monitoring,infrared thermography,22,1.3116
-crop monitoring,lidar,21,1.2802
 multispectral imaging,hyperspectral imaging,98,15.298
 multispectral imaging,infrared thermography,83,13.9374
-multispectral imaging,lidar,31,5.3231
 hyperspectral imaging,infrared thermography,59,12.2026
-hyperspectral imaging,lidar,44,9.3057
-infrared thermography,lidar,35,7.9627
-weed detection,hyperspectral imaging,19,2.9311
 precision agriculture,winter wheat,107,1.2142
 precision agriculture,wheat,101,1.3642
 precision agriculture,quadrotor,57,0.7637
 precision agriculture,smart agriculture,309,1.9319
-crop monitoring,maize,46,1.2176
-crop monitoring,flight altitude,11,0.6599
-maize,winter wheat,11,0.7864
-maize,flight altitude,12,1.1929
-winter wheat,flight altitude,6,0.9723
 precision agriculture,hyperspectral imaging,126,1.8366
-precision agriculture,digital surface model,38,0.6604
-remote sensing,aerial imagery,9,1.1551
 precision agriculture,multispectral imaging,163,1.929
 precision agriculture,yield prediction,157,2.2106
 precision agriculture,nitrogen fertilization,84,1.3556
@@ -62,1206 +38,147 @@ precision agriculture,crop growth monitoring,79,1.4024
 ndvi,multispectral imaging,97,3.9536
 ndvi,yield prediction,61,2.9582
 ndvi,nitrogen fertilization,67,3.7239
-ndvi,crop growth monitoring,49,2.9958
-multispectral imaging,yield prediction,30,4.5239
-multispectral imaging,nitrogen fertilization,14,2.4196
-multispectral imaging,crop growth monitoring,6,1.1407
-yield prediction,nitrogen fertilization,15,3.0845
-yield prediction,crop growth monitoring,14,3.1667
-nitrogen fertilization,crop growth monitoring,15,3.8886
 precision agriculture,rice,82,1.1045
-leaf area index,rice,41,4.2536
 vegetation indices,maize,179,2.6908
-vegetation indices,flight altitude,27,0.92
-wheat,grain yield,43,8.7958
-rice,grain yield,40,8.16
-soybean,crop yield,9,2.4833
-wheat,flight altitude,7,1.3501
 precision agriculture,agricultural robotics,220,2.7544
-ndvi,flight altitude,14,0.7608
-multispectral imagery,flight altitude,18,1.6274
 multispectral imagery,maize,61,2.4332
-wheat,digital surface model,6,1.2745
-leaf area index,structure from motion,14,2.0693
 precision agriculture,crop health monitoring,179,2.9363
 precision agriculture,weed detection,225,2.6314
 precision agriculture,crop protection,96,1.8143
-weed detection,crop protection,15,3.0003
 crop monitoring,agricultural robotics,66,3.1418
 ndvi,crop monitoring,123,1.7799
 precision agriculture,weed control,88,1.7566
 precision agriculture,flight altitude,55,0.8679
 precision agriculture,maize,191,1.3296
 precision agriculture,crop yield prediction,250,2.0745
-crop yield prediction,rice,19,1.9218
-crop yield prediction,crop growth monitoring,26,3.4658
-rice,crop growth monitoring,32,6.9244
-leaf area index,multispectral imaging,7,0.638
-crop monitoring,quadrotor,18,0.9169
-soybean,grain yield,18,4.2476
-soybean,weed control,12,3.3776
-grain yield,weed control,18,5.4416
-sustainable agriculture,digital surface model,3,0.3182
 maize,leaf area index,83,4.4502
-maize,grain yield,44,4.6389
 ndvi,crop yield prediction,73,2.0863
-ndvi,wheat,49,2.2794
-crop yield prediction,leaf area index,39,2.4925
-crop yield prediction,wheat,14,1.4199
-leaf area index,wheat,35,3.641
-maize,plant height,28,3.4115
-grain yield,plant height,16,4.6864
-multispectral imaging,agricultural robotics,9,1.2067
 precision agriculture,remote sensing,301,2.3017
 remote sensing,food security,84,4.7442
-remote sensing,crop health monitoring,29,3.292
 remote sensing,satellite imagery,84,9.5354
-crop health monitoring,satellite imagery,17,4.1398
-precision agriculture,plant height,42,0.8123
-crop monitoring,plant height,18,1.3236
 vegetation indices,yield prediction,84,2.554
-multispectral imagery,digital surface model,24,2.39
-weed detection,aerial imagery,22,4.3183
-aerial imagery,crop protection,3,0.9516
 crop monitoring,remote sensing,92,2.6749
-crop monitoring,weed detection,46,2.0455
-crop monitoring,aerial imagery,32,2.2565
 vegetation indices,crop growth monitoring,110,4.2166
-maize,crop growth monitoring,30,3.3549
 leaf area index,crop growth monitoring,64,8.7503
 vegetation indices,crop monitoring,183,1.6603
 vegetation indices,rgb images,114,2.7745
-crop monitoring,rgb images,35,1.4999
 precision agriculture,satellite imagery,126,2.0669
-multispectral imaging,digital surface model,5,0.9306
-weed detection,flight altitude,10,1.67
-maize,weed control,13,1.6348
 precision agriculture,plant disease detection,223,2.0953
-ndvi,plant disease detection,25,0.809
-ndvi,crop health monitoring,31,1.7514
 plant disease detection,crop health monitoring,58,8.0899
-weed detection,multispectral imaging,23,2.8807
-weed detection,wheat,12,1.7154
-lidar,structure from motion,10,2.7845
-vegetation indices,lidar,27,0.9348
-precision agriculture,structure from motion,38,0.7293
-vegetation indices,weed detection,25,0.6314
-ndvi,sustainable agriculture,20,0.4646
 ndvi,high-throughput phenotyping,57,2.2535
-sustainable agriculture,high-throughput phenotyping,5,0.3503
 precision agriculture,crop yield,117,2.2895
 vegetation indices,wheat,94,2.7416
 ndvi,maize,102,2.4455
-ndvi,weed detection,17,0.6847
-multispectral imagery,weed detection,20,1.3402
-multispectral imagery,wheat,27,2.0896
-maize,weed detection,30,2.2103
 maize,wheat,50,4.2544
-crop monitoring,soil moisture,26,1.3841
-crop monitoring,crop yield,22,1.6369
 ndvi,grain yield,52,2.9972
-maize,multispectral imaging,18,1.342
-multispectral imaging,grain yield,6,1.0754
-crop protection,weed control,5,1.707
 vegetation indices,texture features,176,6.0352
-rgb images,wheat,19,2.6175
-rgb images,flight altitude,15,2.4141
-rgb images,texture features,28,4.5351
-wheat,texture features,5,0.9705
-flight altitude,texture features,7,1.5873
 precision agriculture,soybean,60,0.9349
 vegetation indices,soybean,66,2.2206
-ndvi,soybean,45,2.4149
-multispectral imagery,soybean,28,2.4998
-leaf area index,soybean,25,3.0002
 vegetation indices,plant height,97,4.051
-quadrotor,aerial imagery,4,0.8994
-crop yield prediction,agricultural robotics,23,2.1623
-soil moisture,digital surface model,3,0.6606
 crop monitoring,artificial intelligence,53,2.2308
 crop monitoring,machine learning,57,2.4707
 artificial intelligence,machine learning,61,6.9664
-smart agriculture,crop yield prediction,49,2.3005
-smart agriculture,soil moisture,8,0.6337
-crop yield prediction,soil moisture,11,1.1565
-remote sensing,weed detection,15,1.214
-remote sensing,agricultural robotics,29,2.5125
-weed detection,agricultural robotics,30,3.9752
-soybean,aerial imagery,9,2.3536
-yield prediction,grain yield,6,1.2795
-vegetation indices,satellite imagery,27,0.9564
-rice,pesticide application,6,1.1841
 leaf area index,plant height,50,7.448
-structure from motion,plant height,11,3.6947
-ndvi,rgb images,22,0.854
-ndvi,smallholder farmers,9,0.5995
-rgb images,smallholder farmers,3,0.5918
 vegetation indices,partial least squares regression,129,5.1471
-digital surface model,structure from motion,42,12.6764
-object detection,rgb images,17,1.7306
-remote sensing,hyperspectral imaging,33,3.3286
-leaf area index,nitrogen fertilization,46,5.7175
-wheat,crop growth monitoring,18,3.9055
 ndvi,rice,55,2.5516
-rice,nitrogen fertilization,29,5.7047
-ndvi,infrared thermography,28,1.5121
-maize,high-throughput phenotyping,37,2.6756
-maize,infrared thermography,13,1.2841
-leaf area index,high-throughput phenotyping,20,1.7682
-leaf area index,infrared thermography,8,0.9661
-high-throughput phenotyping,infrared thermography,16,2.6061
 crop monitoring,crop yield prediction,77,2.4294
 weed detection,weed control,52,10.9857
-agricultural robotics,crop protection,10,2.1412
-agricultural robotics,weed control,18,4.071
-wheat,crop protection,8,1.848
-wheat,weed control,10,2.4399
-precision agriculture,high-throughput phenotyping,45,0.5166
-maize,digital surface model,12,1.3138
-winter wheat,plant height,19,3.7736
 vegetation indices,winter wheat,147,3.6022
 ndvi,winter wheat,71,2.7749
-multispectral imaging,sentinel-2,4,0.7945
-crop monitoring,pesticide application,28,1.7236
-remote sensing,high-throughput phenotyping,13,1.0327
-ndvi,digital surface model,34,2.0351
-ndvi,structure from motion,15,0.9914
 vegetation indices,crop yield prediction,128,2.2935
 vegetation indices,plant disease detection,59,1.1971
-crop yield prediction,plant disease detection,43,3.0339
-crop yield prediction,aerial imagery,8,1.1141
-weed detection,quadrotor,10,1.4179
-crop monitoring,nitrogen fertilization,17,1.0431
-multispectral imaging,crop health monitoring,27,4.7434
-infrared thermography,flight altitude,6,1.3434
-multispectral imagery,crop growth monitoring,23,2.3394
 vegetation indices,high-throughput phenotyping,102,2.5283
-multispectral imagery,high-throughput phenotyping,36,2.3679
-crop monitoring,crop growth monitoring,10,0.6749
-weed detection,texture features,9,1.5126
-multispectral imaging,texture features,3,0.5102
 vegetation indices,multispectral imaging,88,2.2488
 precision agriculture,random forest,185,1.1423
-random forest,weed detection,18,1.1763
 random forest,multispectral imagery,96,3.3964
-random forest,high-throughput phenotyping,25,1.6035
-random forest,soybean,19,1.6542
-high-throughput phenotyping,soybean,32,5.1795
-high-throughput phenotyping,wheat,32,4.4898
-high-throughput phenotyping,digital surface model,12,2.1664
-high-throughput phenotyping,structure from motion,12,2.3923
-wheat,structure from motion,5,1.1728
-nitrogen fertilization,structure from motion,5,1.4013
-nitrogen fertilization,plant height,9,2.542
-ndvi,remote sensing,40,1.0535
 vegetation indices,nitrogen fertilization,111,3.8681
-maize,nitrogen fertilization,44,4.4732
 ndvi,random forest,83,1.765
-ndvi,soil moisture,47,2.2664
-random forest,soil moisture,32,2.5035
-vegetation indices,remote sensing,44,0.7265
-multispectral imagery,soil moisture,21,1.6847
-maize,soil moisture,18,1.5877
 internet of things,smart agriculture,307,9.165
 internet of things,smallholder farmers,59,5.4486
-smart agriculture,smallholder farmers,34,3.7204
-flight altitude,digital surface model,10,2.4816
-rgb images,soybean,17,2.7017
-vegetation indices,infrared thermography,31,1.0496
-multispectral imagery,infrared thermography,16,1.4375
-rgb images,digital surface model,18,3.1907
-rgb images,structure from motion,11,2.1531
-ndvi,hyperspectral imaging,13,0.6526
-crop monitoring,sentinel-2,33,2.3271
-ndvi,plant height,47,3.1307
-crop growth monitoring,plant height,22,6.8351
-soybean,crop health monitoring,3,0.6939
-vegetation indices,structure from motion,15,0.6216
-maize,structure from motion,15,1.8135
-digital surface model,plant height,14,4.2584
 internet of things,food security,151,5.8847
 internet of things,artificial intelligence in agriculture,172,9.3628
 internet of things,machine learning,111,6.0423
 internet of things,agricultural robotics,126,7.5326
-internet of things,deep learning,41,2.6733
 internet of things,edge computing,61,5.4427
 smart agriculture,food security,118,5.4489
 smart agriculture,artificial intelligence in agriculture,117,7.5465
 smart agriculture,machine learning,58,3.741
 smart agriculture,agricultural robotics,84,5.9502
-smart agriculture,deep learning,34,2.6268
 smart agriculture,edge computing,57,6.0261
 food security,artificial intelligence in agriculture,146,12.2931
 food security,machine learning,75,6.315
 food security,agricultural robotics,85,7.86
-food security,deep learning,39,3.9333
-food security,edge computing,23,3.1743
 artificial intelligence in agriculture,machine learning,59,6.9389
 artificial intelligence in agriculture,agricultural robotics,140,18.0828
-artificial intelligence in agriculture,deep learning,14,1.9722
-artificial intelligence in agriculture,edge computing,9,1.735
-machine learning,agricultural robotics,33,4.2624
 machine learning,deep learning,85,11.9741
-machine learning,edge computing,13,2.506
-agricultural robotics,deep learning,18,2.7848
-agricultural robotics,edge computing,16,3.3874
-deep learning,edge computing,14,3.2326
-ndvi,satellite imagery,28,1.5819
-crop yield prediction,satellite imagery,33,4.065
-multispectral imagery,remote sensing,17,0.7449
-multispectral imagery,yield prediction,32,2.5818
-multispectral imagery,satellite imagery,14,1.3159
-remote sensing,yield prediction,34,3.3129
-high-throughput phenotyping,yield prediction,20,2.9254
-yield prediction,satellite imagery,17,3.5534
-wheat,plant height,23,5.437
-crop yield prediction,soybean,12,1.404
-crop monitoring,soybean,18,1.0664
 vegetation indices,rice,112,3.2577
-maize,yield prediction,26,2.3063
-maize,satellite imagery,13,1.3434
-crop yield,weed control,10,3.5349
 random forest,crop yield prediction,52,2.411
-random forest,multispectral imaging,15,0.9919
-crop yield prediction,high-throughput phenotyping,15,1.293
-crop yield prediction,multispectral imaging,15,1.333
-high-throughput phenotyping,multispectral imaging,34,4.1798
-soybean,crop growth monitoring,5,1.2515
-remote sensing,weed control,17,2.3483
-crop yield prediction,crop health monitoring,26,3.2027
-agricultural robotics,crop health monitoring,12,2.2303
-remote sensing,soil moisture,17,1.6471
-high-throughput phenotyping,crop yield,3,0.6098
-leaf area index,crop yield,8,1.2057
-high-throughput phenotyping,nitrogen fertilization,10,1.6764
-wheat,yield prediction,14,2.4095
 crop monitoring,plant disease detection,75,2.6794
 precision agriculture,convolutional neural networks,153,1.3629
-precision agriculture,support vector machine,73,0.9996
-random forest,convolutional neural networks,43,2.1402
-random forest,support vector machine,175,13.389
-convolutional neural networks,weed detection,45,4.2423
-convolutional neural networks,support vector machine,28,3.0905
-weed detection,support vector machine,13,1.8839
-winter wheat,lidar,4,0.6586
-lidar,nitrogen fertilization,4,0.9366
+precision agriculture,support vector machine,73,0.9968
+random forest,support vector machine,176,13.4285
 precision agriculture,rgb images,112,1.2623
 precision agriculture,partial least squares regression,53,0.9793
 multispectral imagery,rgb images,93,6.006
-multispectral imagery,partial least squares regression,24,2.541
-leaf area index,rgb images,27,2.3438
-leaf area index,partial least squares regression,44,6.2618
-rgb images,partial least squares regression,21,3.9577
-soybean,partial least squares regression,8,2.0843
-quadrotor,pesticide application,14,2.7481
-multispectral imagery,nitrogen fertilization,32,2.959
-crop yield prediction,nitrogen fertilization,12,1.4542
-high-throughput phenotyping,support vector machine,12,1.7069
-wheat,support vector machine,5,0.8368
-crop monitoring,crop protection,11,0.7904
-crop yield prediction,structure from motion,6,0.8646
-rgb images,crop health monitoring,7,1.1712
-ndvi,partial least squares regression,20,1.2728
-winter wheat,yield prediction,19,2.7474
-winter wheat,crop growth monitoring,40,7.2919
-winter wheat,partial least squares regression,37,7.0208
-yield prediction,partial least squares regression,10,2.3544
-crop growth monitoring,partial least squares regression,22,6.5302
-plant disease detection,artificial intelligence,29,2.7297
-high-throughput phenotyping,plant height,40,8.0362
-yield prediction,structure from motion,3,0.7336
-yield prediction,plant height,19,4.6823
-sustainable agriculture,crop yield,48,5.7326
-food security,crop yield,29,4.1914
 vegetation indices,random forest,323,4.3066
-crop monitoring,random forest,48,1.1269
 crop monitoring,multispectral imagery,59,1.4204
-vegetation indices,digital surface model,34,1.276
-crop yield prediction,infrared thermography,7,0.8242
-nitrogen fertilization,digital surface model,3,0.7614
 precision agriculture,internet of things,447,2.3586
-crop monitoring,convolutional neural networks,37,1.2531
-flight altitude,crop protection,12,3.2384
-vegetation indices,convolutional neural networks,31,0.5963
-wheat,hyperspectral imaging,11,1.9598
 precision agriculture,texture features,75,1.191
-crop monitoring,wheat,32,1.6434
-wheat,nitrogen fertilization,27,5.3257
-quadrotor,crop protection,11,2.5204
-high-throughput phenotyping,aerial imagery,7,1.3486
-leaf area index,satellite imagery,3,0.379
-rgb images,high-throughput phenotyping,29,3.3954
 precision agriculture,lidar,82,1.3148
-vegetation indices,quadrotor,8,0.2314
-multispectral imaging,quadrotor,5,0.7174
-plant disease detection,aerial imagery,13,2.0501
-multispectral imagery,texture features,33,3.0027
-smart agriculture,quadrotor,9,0.6822
 maize,soybean,63,6.1839
-convolutional neural networks,small object detection,3,0.4452
-food security,quadrotor,3,0.2969
-crop monitoring,texture features,15,0.9057
-plant disease detection,soybean,4,0.5299
-plant disease detection,texture features,4,0.5401
-soybean,texture features,6,1.3435
-multispectral imagery,structure from motion,11,1.2096
-maize,hyperspectral imaging,10,0.9182
-hyperspectral imaging,nitrogen fertilization,5,1.0643
-crop yield prediction,rgb images,26,2.2005
 precision agriculture,transfer learning,75,1.4734
-ndvi,support vector machine,38,1.792
-satellite imagery,smallholder farmers,6,1.7226
 precision agriculture,infrared thermography,79,1.2387
 remote sensing,crop yield prediction,63,3.6175
-remote sensing,infrared thermography,16,1.736
-crop yield prediction,weed detection,21,1.8442
-weed detection,infrared thermography,14,2.3232
-weed detection,satellite imagery,6,1.0417
-infrared thermography,satellite imagery,6,1.3966
-soil moisture,infrared thermography,15,2.98
-smart agriculture,pesticide application,12,1.0992
-multispectral imagery,plant height,24,2.6596
-precision agriculture,sentinel-2,46,0.8531
-rgb images,hyperspectral imaging,11,1.6354
-hyperspectral imaging,sentinel-2,3,0.7339
-flight altitude,weed control,8,2.2803
-rgb images,rice,18,2.473
-rgb images,plant height,15,2.9589
-remote sensing,nitrogen fertilization,7,0.7817
-vegetation indices,crop health monitoring,45,1.594
 plant disease detection,multispectral imaging,53,5.3332
-multispectral imaging,support vector machine,7,1.0265
-ndvi,quadrotor,8,0.3691
-satellite imagery,crop growth monitoring,5,1.3176
-remote sensing,rice,5,0.4661
-remote sensing,quadrotor,3,0.2781
-crop monitoring,rice,23,1.178
 precision agriculture,digital agriculture,158,2.3235
-remote sensing,digital agriculture,48,4.8846
-agricultural robotics,digital agriculture,49,8.164
 precision agriculture,machine learning,198,2.2572
-machine learning,hyperspectral imaging,37,5.5638
-vegetation indices,hyperspectral imaging,45,1.4164
-weed detection,yield prediction,12,1.7883
-yield prediction,hyperspectral imaging,20,3.7146
-yield prediction,infrared thermography,14,2.7971
-ndvi,aerial imagery,12,0.7665
-digital surface model,aerial imagery,3,0.8751
-quadrotor,crop health monitoring,4,0.7955
-rgb images,transfer learning,12,2.4046
-rgb images,crop growth monitoring,14,2.5348
-maize,rgb images,35,2.4851
-rgb images,weed detection,25,2.9821
-rgb images,weed control,3,0.6108
-sustainable agriculture,multispectral imaging,26,1.8779
-random forest,digital surface model,14,1.3595
-vegetation indices,food security,32,0.564
-vegetation indices,crop yield,17,0.7184
-maize,food security,16,0.8227
-maize,crop yield,13,1.6026
-internet of things,crop protection,16,1.4439
-hyperspectral imaging,plant height,4,1.0204
-infrared thermography,plant height,3,0.8233
-lidar,plant height,7,1.9643
 precision agriculture,semantic segmentation,68,1.2659
-multispectral imagery,agricultural robotics,3,0.2152
-multispectral imagery,semantic segmentation,14,1.4933
-agricultural robotics,semantic segmentation,5,1.0546
-vegetation indices,support vector machine,123,3.6368
-maize,crop yield prediction,34,1.7773
-maize,quadrotor,3,0.2532
-maize,support vector machine,21,1.8115
-maize,texture features,28,2.8011
-crop yield prediction,quadrotor,5,0.503
-crop yield prediction,support vector machine,26,2.6733
-crop yield prediction,texture features,15,1.7887
-quadrotor,support vector machine,3,0.498
-quadrotor,crop growth monitoring,4,0.8609
-support vector machine,texture features,32,6.2967
-support vector machine,crop growth monitoring,8,1.7597
-texture features,crop growth monitoring,28,7.1428
-smart agriculture,satellite imagery,19,1.7634
-agricultural robotics,aerial imagery,3,0.6304
-digital agriculture,aerial imagery,3,0.7404
-weed detection,crop growth monitoring,4,0.7515
-crop growth monitoring,aerial imagery,4,1.1917
-ndvi,food security,20,0.5622
-food security,leaf area index,7,0.44
-soil moisture,partial least squares regression,12,2.8094
-satellite imagery,weed control,4,1.1853
-maize,crop health monitoring,10,1.0334
+vegetation indices,support vector machine,123,3.6268
 random forest,maize,64,2.4894
-plant disease detection,quadrotor,3,0.3417
-convolutional neural networks,object detection,32,2.5745
-crop monitoring,digital agriculture,39,2.1806
-sustainable agriculture,weed control,17,2.0711
-remote sensing,wheat,6,0.5608
 precision agriculture,object detection,117,1.1678
-object detection,weed detection,40,4.2253
-multispectral imagery,convolutional neural networks,28,1.4291
-crop yield prediction,digital surface model,8,1.044
-wheat,partial least squares regression,16,3.6135
-rgb images,support vector machine,16,2.2345
-support vector machine,digital surface model,11,2.3688
-texture features,digital surface model,5,1.2487
-crop monitoring,digital surface model,7,0.4626
 vegetation indices,soil moisture,58,1.7536
 random forest,leaf area index,69,3.2814
-leaf area index,soil moisture,16,1.7254
-soil moisture,soybean,14,2.7639
-crop yield prediction,hyperspectral imaging,18,1.9702
-leaf area index,hyperspectral imaging,10,1.1227
-nitrogen fertilization,partial least squares regression,17,4.5873
-leaf area index,flight altitude,7,0.8507
-plant disease detection,machine learning,35,3.3927
 convolutional neural networks,plant disease detection,79,5.9834
-crop yield prediction,flight altitude,6,0.7109
-plant disease detection,winter wheat,7,0.6754
 precision agriculture,deep learning,127,1.7342
-weed detection,deep learning,31,4.4801
-weed detection,semantic segmentation,28,5.5166
-deep learning,semantic segmentation,14,3.2205
-crop yield prediction,winter wheat,32,2.7269
-crop monitoring,structure from motion,7,0.5108
-aerial imagery,structure from motion,5,1.6105
-convolutional neural networks,semantic segmentation,17,2.551
 ndvi,sentinel-2,70,4.4713
-leaf area index,grain yield,9,1.1601
-winter wheat,wheat,11,1.5258
-random forest,rgb images,44,2.771
-random forest,yield prediction,27,2.1243
-random forest,nitrogen fertilization,36,3.2462
-rgb images,yield prediction,11,1.5798
-rgb images,nitrogen fertilization,12,1.9752
-crop monitoring,support vector machine,16,0.833
-crop yield prediction,yield prediction,12,1.2688
-multispectral imagery,rice,33,2.547
 random forest,winter wheat,56,3.5508
-remote sensing,winter wheat,4,0.3141
-convolutional neural networks,aerial imagery,30,4.485
-winter wheat,multispectral imaging,11,1.3369
-winter wheat,hyperspectral imaging,7,1.0478
-ndvi,texture features,15,0.8204
-high-throughput phenotyping,grain yield,20,3.477
-maize,crop protection,7,0.8334
 sustainable agriculture,agricultural robotics,96,7.3355
-rgb images,winter wheat,20,2.3149
-winter wheat,texture features,37,6.0339
-infrared thermography,structure from motion,4,1.0892
 precision agriculture,artificial intelligence in agriculture,288,3.2832
-smart agriculture,crop protection,15,1.6039
-artificial intelligence in agriculture,crop protection,10,1.9497
-wheat,lidar,7,1.3718
-multispectral imagery,winter wheat,27,1.7556
-multispectral imagery,support vector machine,35,2.746
-multispectral imagery,sentinel-2,13,1.3815
-high-throughput phenotyping,deep learning,21,2.9788
-support vector machine,soil moisture,7,1.2144
-flight altitude,structure from motion,10,2.7403
-flight altitude,aerial imagery,3,0.7945
 plant disease detection,hyperspectral imaging,50,6.1969
 internet of things,remote sensing,143,5.2214
-internet of things,satellite imagery,39,3.0548
-object detection,deep learning,23,2.8367
-object detection,aerial imagery,21,3.5178
-deep learning,aerial imagery,11,2.521
-artificial intelligence,rice,5,0.6747
-artificial intelligence,yield prediction,24,3.3854
-rice,yield prediction,15,2.5746
 vegetation indices,sentinel-2,74,2.9636
-high-throughput phenotyping,crop growth monitoring,6,1.1064
-high-throughput phenotyping,lidar,22,3.6643
-high-throughput phenotyping,rice,10,1.3993
-remote sensing,pesticide application,5,0.5602
-remote sensing,crop protection,16,2.0925
 internet of things,digital agriculture,92,6.46
-internet of things,crop health monitoring,46,3.6031
-digital agriculture,crop health monitoring,5,1.0915
-digital agriculture,satellite imagery,11,2.4013
-multispectral imaging,wheat,12,1.7358
-multispectral imaging,crop yield,11,2.3053
-agricultural robotics,hyperspectral imaging,6,0.9909
-agricultural robotics,crop yield,15,3.3257
-hyperspectral imaging,crop yield,7,1.8069
 crop monitoring,food security,100,3.1032
 food security,crop yield prediction,69,4.2288
 food security,digital agriculture,63,6.8426
-crop yield prediction,digital agriculture,20,2.2085
-maize,plant disease detection,12,0.7103
-remote sensing,plant disease detection,37,2.4057
-remote sensing,support vector machine,10,0.9475
-plant disease detection,support vector machine,16,1.8628
-soil moisture,satellite imagery,9,1.8706
 precision agriculture,artificial intelligence,174,1.9262
-vegetation indices,artificial intelligence,10,0.239
-ndvi,artificial intelligence,6,0.2288
-aerial imagery,weed control,4,1.3401
-random forest,sentinel-2,38,3.9379
-plant disease detection,infrared thermography,26,3.4663
-rice,aerial imagery,4,0.9043
-yield prediction,aerial imagery,4,0.9453
 random forest,partial least squares regression,78,8.053
-convolutional neural networks,high-throughput phenotyping,19,1.7581
-object detection,high-throughput phenotyping,5,0.5184
 random forest,texture features,65,5.7675
-leaf area index,texture features,31,3.7916
-ndvi,lidar,11,0.6074
-internet of things,aerial imagery,3,0.2657
-smart agriculture,aerial imagery,4,0.4197
-vegetation indices,machine learning,42,1.0339
-vegetation indices,weed control,8,0.3448
-machine learning,multispectral imaging,24,2.9301
-machine learning,weed control,8,1.6475
-multispectral imaging,weed control,9,1.924
-hyperspectral imaging,weed control,10,2.6331
-vegetation indices,digital agriculture,6,0.1905
-vegetation indices,pesticide application,7,0.2447
-digital agriculture,pesticide application,3,0.6464
-wheat,crop yield,6,1.4351
-nitrogen fertilization,crop yield,6,1.7147
-satellite imagery,sentinel-2,7,1.9272
 crop monitoring,internet of things,137,2.7485
-internet of things,support vector machine,8,0.5231
-internet of things,crop yield,40,3.7376
 crop monitoring,smart agriculture,118,2.8051
-lidar,digital surface model,8,2.0173
-machine learning,crop protection,11,2.1447
-sustainable agriculture,nitrogen fertilization,5,0.4925
 remote sensing,artificial intelligence in agriculture,51,4.0233
-artificial intelligence in agriculture,yield prediction,32,4.6484
-smart agriculture,convolutional neural networks,43,2.1671
-smart agriculture,weed detection,29,1.9189
-object detection,crop growth monitoring,3,0.481
-artificial intelligence,weed detection,7,0.8201
-yield prediction,sentinel-2,8,1.8906
-crop monitoring,high-throughput phenotyping,7,0.3055
-food security,high-throughput phenotyping,11,0.9326
-food security,multispectral imaging,14,1.2237
-food security,infrared thermography,4,0.4632
-ndvi,smart agriculture,11,0.2369
-ndvi,convolutional neural networks,11,0.3375
 smart agriculture,remote sensing,57,2.4661
-remote sensing,convolutional neural networks,37,2.2807
-remote sensing,rgb images,4,0.312
-crop yield prediction,convolutional neural networks,36,2.408
-convolutional neural networks,rgb images,24,2.1805
-crop yield prediction,smallholder farmers,21,3.0498
-convolutional neural networks,nitrogen fertilization,3,0.3903
-convolutional neural networks,smallholder farmers,11,1.7149
-vegetation indices,aerial imagery,14,0.5607
-high-throughput phenotyping,flight altitude,9,1.4752
-multispectral imagery,grain yield,9,0.863
-rgb images,grain yield,7,1.1949
-vegetation indices,grain yield,43,1.5539
-grain yield,digital surface model,5,1.316
-wheat,soil moisture,7,1.1979
 sustainable agriculture,plant disease detection,56,3.2113
 sustainable agriculture,artificial intelligence in agriculture,170,11.8279
-rice,wheat,31,5.1039
 crop monitoring,artificial intelligence in agriculture,107,4.638
-support vector machine,structure from motion,5,1.189
-crop monitoring,grain yield,7,0.4454
-random forest,crop health monitoring,11,1.0082
-support vector machine,crop health monitoring,4,0.8131
-smart agriculture,crop growth monitoring,7,0.7031
-maize,deep learning,10,0.8602
-crop monitoring,partial least squares regression,10,0.7025
-deep learning,weed control,12,2.96
 smart agriculture,sustainable agriculture,142,5.4184
-smart agriculture,digital agriculture,44,3.6609
 sustainable agriculture,digital agriculture,69,6.1927
 artificial intelligence in agriculture,digital agriculture,65,9.8611
 artificial intelligence in agriculture,smallholder farmers,54,10.7743
-digital agriculture,smallholder farmers,29,7.4638
-random forest,lidar,15,1.3438
-multispectral imagery,lidar,32,2.9399
-maize,lidar,13,1.3131
-support vector machine,lidar,3,0.596
-quadrotor,infrared thermography,3,0.5703
-random forest,rice,32,2.4085
-random forest,wheat,18,1.3584
-winter wheat,digital surface model,4,0.7139
-leaf area index,yield prediction,26,2.8197
-crop health monitoring,transfer learning,9,2.6248
-plant disease detection,wheat,11,1.2633
-random forest,plant height,32,3.4581
-high-throughput phenotyping,partial least squares regression,11,2.1114
-soybean,structure from motion,5,1.353
-artificial intelligence in agriculture,hyperspectral imaging,9,1.3534
-deep learning,hyperspectral imaging,36,6.4843
-machine learning,weed detection,12,1.4478
-machine learning,soybean,7,1.1252
-machine learning,aerial imagery,3,0.574
-weed detection,soybean,22,3.6279
 internet of things,artificial intelligence,176,9.3031
-artificial intelligence,deep learning,29,3.967
-vegetation indices,smart agriculture,16,0.216
-smart agriculture,multispectral imagery,7,0.2508
-smart agriculture,crop health monitoring,41,3.8053
-multispectral imagery,crop health monitoring,19,1.7859
 convolutional neural networks,transfer learning,71,11.2439
-rgb images,soil moisture,3,0.4284
-random forest,hyperspectral imaging,13,1.0588
-maize,convolutional neural networks,24,1.3468
-maize,aerial imagery,6,0.701
-maize,transfer learning,13,1.6089
-plant disease detection,transfer learning,35,5.8466
-aerial imagery,transfer learning,10,3.2973
-random forest,crop growth monitoring,30,2.9756
-random forest,structure from motion,4,0.4289
-crop growth monitoring,structure from motion,5,1.5414
-precision agriculture,grain yield,16,0.2678
 remote sensing,artificial intelligence,108,8.2733
-support vector machine,hyperspectral imaging,10,1.8061
-quadrotor,transfer learning,3,0.7146
-support vector machine,partial least squares regression,30,6.8687
 internet of things,sustainable agriculture,192,6.183
 sustainable agriculture,artificial intelligence,70,4.7293
-artificial intelligence,agricultural robotics,30,3.7627
-artificial intelligence,smallholder farmers,18,3.4874
-artificial intelligence,crop yield,9,1.7643
-agricultural robotics,smallholder farmers,21,4.6016
-smallholder farmers,crop yield,4,1.37
-food security,semantic segmentation,3,0.4125
-sustainable agriculture,quadrotor,4,0.3271
-rgb images,multispectral imaging,13,1.5692
-random forest,weed control,4,0.4461
-lidar,weed control,3,0.8689
-remote sensing,leaf area index,6,0.3534
-remote sensing,plant height,3,0.4015
-leaf area index,digital surface model,4,0.5354
-high-throughput phenotyping,hyperspectral imaging,22,3.3311
-multispectral imaging,flight altitude,3,0.507
-agricultural robotics,crop growth monitoring,3,0.6034
-crop yield prediction,object detection,19,1.424
-rice,infrared thermography,4,0.7645
-maize,partial least squares regression,27,3.1429
-soybean,nitrogen fertilization,3,0.6826
-multispectral imaging,digital agriculture,5,0.7874
-hyperspectral imaging,digital agriculture,3,0.5819
-plant disease detection,deep learning,46,5.3409
-winter wheat,sentinel-2,18,3.4283
-nitrogen fertilization,sentinel-2,6,1.6251
-object detection,transfer learning,28,4.9685
-multispectral imagery,crop yield,6,0.6728
-satellite imagery,crop yield,7,2.0335
-leaf area index,sentinel-2,22,3.1426
-multispectral imaging,soil moisture,6,0.8997
-soil moisture,hyperspectral imaging,7,1.2928
-soil moisture,lidar,4,0.8126
-partial least squares regression,sentinel-2,11,3.4113
-crop yield prediction,semantic segmentation,9,1.2581
-leaf area index,machine learning,8,0.7024
-leaf area index,lidar,18,2.2229
-machine learning,lidar,17,2.812
-object detection,infrared thermography,8,1.133
-artificial intelligence,digital agriculture,39,5.7453
 remote sensing,machine learning,87,6.8633
-remote sensing,deep learning,47,4.4412
-smart agriculture,weed control,5,0.5647
-pesticide application,weed control,5,1.4623
-food security,pesticide application,5,0.5979
-agricultural robotics,pesticide application,6,1.1006
-vegetation indices,sustainable agriculture,11,0.1602
-crop monitoring,weed control,9,0.6831
-sustainable agriculture,infrared thermography,11,1.0526
-plant disease detection,weed control,3,0.5092
-infrared thermography,weed control,5,1.4162
-smart agriculture,artificial intelligence,44,2.7558
-artificial intelligence,satellite imagery,23,3.7797
-multispectral imaging,pesticide application,5,0.867
 sustainable agriculture,machine learning,77,5.3574
-multispectral imaging,soybean,5,0.8343
-support vector machine,sentinel-2,7,1.6087
-convolutional neural networks,satellite imagery,20,2.6446
-winter wheat,satellite imagery,5,0.8423
-crop health monitoring,weed control,6,1.778
-plant disease detection,rice,8,0.9163
 crop monitoring,yield prediction,64,3.4264
-crop monitoring,satellite imagery,26,1.6217
-machine learning,yield prediction,22,3.1958
-machine learning,satellite imagery,40,6.7693
-crop monitoring,crop health monitoring,8,0.499
-weed detection,crop health monitoring,3,0.5208
-crop health monitoring,crop protection,5,1.4028
-smart agriculture,support vector machine,6,0.4648
 sustainable agriculture,remote sensing,96,4.4803
-sustainable agriculture,convolutional neural networks,25,1.3591
-sustainable agriculture,support vector machine,4,0.3343
-food security,convolutional neural networks,32,2.1053
-food security,support vector machine,7,0.7079
 internet of things,crop yield prediction,64,2.5358
 crop yield prediction,machine learning,53,4.5371
-internet of things,object detection,8,0.3813
-food security,wheat,7,0.6983
-crop yield prediction,plant height,17,2.4689
-food security,transfer learning,12,1.7412
-pesticide application,smallholder farmers,5,1.4168
-multispectral imagery,quadrotor,6,0.4606
-crop yield prediction,lidar,16,1.9264
-multispectral imaging,plant height,11,2.2784
-wheat,infrared thermography,4,0.7666
-soil moisture,flight altitude,5,0.9996
-smart agriculture,lidar,5,0.4536
-internet of things,weed detection,27,1.5078
-maize,pesticide application,4,0.408
-weed detection,pesticide application,5,0.8568
-weed detection,transfer learning,16,3.3268
-wheat,pesticide application,4,0.7916
-wheat,transfer learning,3,0.7204
-pesticide application,transfer learning,3,0.8635
-quadrotor,yield prediction,3,0.5121
-object detection,pesticide application,3,0.4387
-internet of things,quadrotor,6,0.3838
-flight altitude,pesticide application,19,4.3926
-smart agriculture,winter wheat,3,0.1926
-smart agriculture,multispectral imaging,19,1.2722
-random forest,plant disease detection,17,0.8925
-plant disease detection,yield prediction,34,4.0706
-rgb images,lidar,17,2.7801
-multispectral imaging,rice,9,1.2983
-random forest,machine learning,23,1.4651
-crop yield prediction,partial least squares regression,20,2.775
-texture features,transfer learning,6,1.6939
-rgb images,machine learning,6,0.6977
 food security,artificial intelligence,53,4.3334
-winter wheat,high-throughput phenotyping,12,1.4146
-sustainable agriculture,soil moisture,6,0.5127
-sustainable agriculture,yield prediction,34,2.9218
-sustainable agriculture,hyperspectral imaging,18,1.6013
-artificial intelligence in agriculture,multispectral imaging,8,0.9767
-artificial intelligence in agriculture,infrared thermography,6,0.9706
-soil moisture,yield prediction,8,1.4273
-partial least squares regression,plant height,14,4.5275
-rice,crop yield,4,0.9541
-smart agriculture,crop yield,30,3.3215
-weed detection,crop yield,11,2.2782
-deep learning,crop yield,9,2.1763
-soybean,crop protection,3,0.7994
-ndvi,crop yield,15,1.0109
-soil moisture,crop yield,13,3.2233
-food security,crop growth monitoring,5,0.6556
-support vector machine,yield prediction,9,1.5703
-soybean,pesticide application,4,0.9132
-rice,support vector machine,5,0.8345
-artificial intelligence in agriculture,crop yield,17,3.432
-winter wheat,soybean,4,0.64
-winter wheat,structure from motion,7,1.3796
-convolutional neural networks,winter wheat,12,1.0977
-leaf area index,crop health monitoring,4,0.5054
-crop monitoring,deep learning,36,1.8691
-multispectral imagery,transfer learning,11,1.2383
-convolutional neural networks,rice,8,0.8686
-multispectral imagery,object detection,15,0.8578
-object detection,crop protection,4,0.6828
-artificial intelligence in agriculture,crop health monitoring,20,3.3847
-artificial intelligence in agriculture,satellite imagery,15,2.5385
-agricultural robotics,satellite imagery,10,1.8586
-digital agriculture,crop yield,15,3.9062
-vegetation indices,semantic segmentation,8,0.3216
-texture features,partial least squares regression,23,6.1072
-multispectral imagery,plant disease detection,19,1.0229
-multispectral imagery,deep learning,20,1.5648
-plant disease detection,rgb images,8,0.7667
-rgb images,deep learning,13,1.8106
-deep learning,crop health monitoring,14,2.8379
-vegetation indices,deep learning,26,0.7666
-crop yield prediction,deep learning,28,2.8711
-leaf area index,deep learning,4,0.4207
-rice,deep learning,7,1.1652
-deep learning,crop growth monitoring,5,1.0968
-convolutional neural networks,soil moisture,5,0.5643
-maize,sentinel-2,16,1.8694
-soybean,sentinel-2,3,0.7845
-random forest,flight altitude,10,0.8817
-support vector machine,flight altitude,3,0.5866
-satellite imagery,aerial imagery,9,2.4779
-rice,soybean,13,2.4691
-artificial intelligence,infrared thermography,15,2.3561
-food security,sentinel-2,3,0.4109
-wheat,sentinel-2,8,1.8135
-convolutional neural networks,quadrotor,3,0.324
-winter wheat,support vector machine,14,1.9686
-crop growth monitoring,sentinel-2,5,1.4897
-random forest,sustainable agriculture,6,0.2261
-sustainable agriculture,sentinel-2,4,0.4528
-maize,semantic segmentation,4,0.4691
-crop yield prediction,transfer learning,11,1.6228
-aerial imagery,semantic segmentation,14,4.3742
-semantic segmentation,transfer learning,15,4.9645
-random forest,digital agriculture,3,0.2465
 internet of things,plant disease detection,66,2.9611
-food security,yield prediction,40,4.1599
-convolutional neural networks,multispectral imaging,22,2.0987
-rice,partial least squares regression,11,2.4776
-soil moisture,sentinel-2,10,2.3499
-smart agriculture,object detection,19,1.0729
-object detection,small object detection,41,6.8172
-remote sensing,lidar,20,2.2191
-plant disease detection,agricultural robotics,25,2.6614
-satellite imagery,transfer learning,5,1.4582
-machine learning,soil moisture,17,2.4555
-multispectral imagery,hyperspectral imaging,7,0.5846
-maize,object detection,16,1.006
-weed detection,smallholder farmers,8,1.6375
-remote sensing,multispectral imaging,25,2.0473
-remote sensing,crop yield,19,2.5729
-food security,hyperspectral imaging,23,2.4761
-food security,weed control,9,1.3269
-rgb images,crop yield,3,0.5988
-machine learning,crop yield,15,3.0282
 smart agriculture,plant disease detection,56,2.977
-smart agriculture,yield prediction,24,1.912
-smart agriculture,hyperspectral imaging,12,0.9896
-yield prediction,crop health monitoring,26,5.4346
-hyperspectral imaging,crop health monitoring,16,3.4621
 precision agriculture,edge computing,111,2.0741
-weed detection,edge computing,10,1.9776
-sustainable agriculture,rgb images,5,0.3439
-sustainable agriculture,weed detection,26,1.8558
-plant disease detection,pesticide application,5,0.6883
-deep learning,infrared thermography,16,3.1001
 convolutional neural networks,deep learning,50,5.5036
-convolutional neural networks,crop health monitoring,30,3.967
-convolutional neural networks,crop protection,8,1.2187
-plant disease detection,crop protection,10,1.6069
-deep learning,crop protection,6,1.4012
-crop monitoring,semantic segmentation,8,0.5662
-internet of things,semantic segmentation,4,0.3556
-rgb images,infrared thermography,8,1.2794
-sustainable agriculture,crop health monitoring,42,4.2049
-random forest,smart agriculture,10,0.3493
-random forest,remote sensing,19,0.8118
-convolutional neural networks,machine learning,12,1.1027
-machine learning,support vector machine,9,1.2713
-sustainable agriculture,object detection,7,0.4264
-sustainable agriculture,deep learning,29,2.4168
-food security,object detection,5,0.3686
-multispectral imagery,food security,6,0.2806
-yield prediction,soybean,11,2.1839
-food security,crop health monitoring,35,4.2405
-hyperspectral imaging,partial least squares regression,14,3.4122
-plant disease detection,weed detection,28,2.7844
-internet of things,random forest,11,0.3243
-artificial intelligence,multispectral imaging,23,2.7268
-artificial intelligence,hyperspectral imaging,27,3.9425
-artificial intelligence,pesticide application,3,0.4866
-hyperspectral imaging,pesticide application,3,0.6407
-soil moisture,plant height,4,0.9802
-soybean,plant height,14,3.8178
-plant height,crop yield,6,2.0549
-plant disease detection,crop yield,7,1.1647
-leaf area index,weed detection,3,0.2702
-internet of things,multispectral imaging,22,1.2432
-deep learning,satellite imagery,26,5.2704
 sustainable agriculture,crop yield prediction,58,2.9373
-sustainable agriculture,satellite imagery,36,3.6042
-food security,satellite imagery,37,4.4829
-crop yield prediction,artificial intelligence in agriculture,47,4.0234
-ndvi,weed control,5,0.3437
-remote sensing,object detection,7,0.4835
-leaf area index,support vector machine,17,1.7928
-machine learning,high-throughput phenotyping,22,2.6053
-smart agriculture,transfer learning,22,2.4454
-plant disease detection,smallholder farmers,15,2.4667
-object detection,yield prediction,9,1.1446
-object detection,semantic segmentation,33,5.5486
-yield prediction,semantic segmentation,4,0.9488
-object detection,soybean,10,1.4073
-object detection,flight altitude,7,0.9976
-soybean,flight altitude,6,1.3349
-convolutional neural networks,soybean,8,1.0048
-convolutional neural networks,plant height,3,0.4677
-support vector machine,plant height,8,1.9172
-maize,remote sensing,7,0.3372
-multispectral imagery,sustainable agriculture,6,0.2319
-convolutional neural networks,crop yield,5,0.7887
-object detection,crop yield,4,0.707
-food security,plant disease detection,39,2.7065
-plant disease detection,artificial intelligence in agriculture,32,3.1019
-plant disease detection,semantic segmentation,10,1.5829
-rgb images,semantic segmentation,12,2.2785
-precision agriculture,small object detection,38,0.6995
-rice,digital surface model,5,1.0592
-machine learning,rice,5,0.6948
-artificial intelligence,soil moisture,6,0.8416
-smart agriculture,maize,3,0.1182
-pesticide application,aerial imagery,3,0.8152
-flight altitude,crop growth monitoring,3,0.7604
-flight altitude,plant height,3,0.8285
-random forest,crop yield,7,0.7654
-rice,texture features,19,3.6779
-sentinel-2,crop yield,5,1.6422
-remote sensing,soybean,3,0.3235
-digital surface model,semantic segmentation,3,0.8783
-texture features,nitrogen fertilization,9,2.0872
-weed detection,lidar,9,1.5272
-maize,rice,29,2.4609
-rice,lidar,3,0.5863
-yield prediction,lidar,11,2.2473
-artificial intelligence,weed control,10,1.9997
-crop yield prediction,artificial intelligence,21,1.7457
-lidar,satellite imagery,6,1.4281
-crop yield prediction,sentinel-2,7,0.9749
-object detection,edge computing,14,2.3628
-winter wheat,weed detection,4,0.4804
-multispectral imagery,machine learning,14,0.9145
-winter wheat,soil moisture,14,2.013
-hyperspectral imaging,crop growth monitoring,6,1.4049
-internet of things,pesticide application,5,0.3865
-wheat,deep learning,15,2.5035
-winter wheat,transfer learning,9,1.8158
-crop growth monitoring,transfer learning,3,0.9468
-machine learning,digital agriculture,16,2.4273
-remote sensing,transfer learning,12,1.6314
-support vector machine,transfer learning,4,0.9737
-crop protection,transfer learning,3,1.008
-crop health monitoring,smallholder farmers,8,2.2968
-artificial intelligence in agriculture,weed control,9,1.8534
-weed detection,rice,3,0.4277
-multispectral imaging,smallholder farmers,9,1.8641
-rice,hyperspectral imaging,5,0.8884
-rice,smallholder farmers,5,1.1788
-rice,weed control,9,2.1899
-hyperspectral imaging,smallholder farmers,6,1.5307
-infrared thermography,smallholder farmers,3,0.8233
-random forest,satellite imagery,9,0.8249
-support vector machine,satellite imagery,3,0.6098
-semantic segmentation,weed control,7,2.354
-vegetation indices,smallholder farmers,3,0.1253
-multispectral imagery,smallholder farmers,4,0.4433
-multispectral imaging,edge computing,14,2.8016
-hyperspectral imaging,edge computing,14,3.4507
-lidar,edge computing,11,2.9824
-internet of things,yield prediction,41,2.7566
-machine learning,crop health monitoring,18,3.0462
-sentinel-2,plant height,4,1.2984
-digital agriculture,infrared thermography,4,0.8346
-winter wheat,semantic segmentation,4,0.7647
-internet of things,soil moisture,5,0.3343
-internet of things,infrared thermography,14,1.0482
-infrared thermography,crop yield,4,1.1107
-crop yield prediction,edge computing,9,1.2628
-internet of things,transfer learning,14,1.3133
-plant disease detection,object detection,33,2.8005
-infrared thermography,semantic segmentation,4,1.0566
-winter wheat,deep learning,3,0.4207
-random forest,grain yield,4,0.374
-quadrotor,flight altitude,8,1.5304
-high-throughput phenotyping,texture features,4,0.6598
-convolutional neural networks,agricultural robotics,10,1.0092
-convolutional neural networks,yield prediction,14,1.589
-agricultural robotics,yield prediction,25,3.9883
-agricultural robotics,transfer learning,4,0.8904
-deep learning,yield prediction,18,3.1319
-deep learning,transfer learning,16,3.8843
-yield prediction,transfer learning,6,1.502
-small object detection,transfer learning,6,1.9637
-internet of things,weed control,7,0.6672
-crop yield prediction,weed control,6,0.8994
-digital agriculture,crop growth monitoring,3,0.7087
-vegetation indices,edge computing,4,0.1614
-crop monitoring,edge computing,11,0.7815
-remote sensing,semantic segmentation,4,0.5153
-smart agriculture,rice,4,0.3048
-random forest,food security,11,0.5016
-maize,small object detection,4,0.4639
-soybean,lidar,3,0.6782
-multispectral imaging,semantic segmentation,6,1.1962
-satellite imagery,plant height,3,0.8613
-rice,flight altitude,7,1.3464
-convolutional neural networks,wheat,8,0.871
-yield prediction,texture features,12,2.4282
-internet of things,leaf area index,3,0.1219
-internet of things,lidar,6,0.4594
-digital agriculture,lidar,3,0.6401
-leaf area index,convolutional neural networks,13,0.8919
-texture features,plant height,6,1.6676
-small object detection,aerial imagery,12,3.7076
-crop monitoring,small object detection,8,0.56
-leaf area index,weed control,3,0.4612
-multispectral imaging,deep learning,22,3.2173
-convolutional neural networks,artificial intelligence,9,0.8031
-digital surface model,crop growth monitoring,4,1.1167
-machine learning,infrared thermography,13,2.1029
-infrared thermography,crop protection,5,1.3408
-sustainable agriculture,edge computing,20,2.2808
-artificial intelligence,edge computing,21,3.931
-multispectral imaging,satellite imagery,6,1.0541
-support vector machine,nitrogen fertilization,9,1.7997
-food security,weed detection,9,0.7774
-food security,crop protection,8,1.1167
-artificial intelligence in agriculture,weed detection,17,2.0511
-rice,sentinel-2,5,1.1304
-internet of things,multispectral imagery,4,0.1209
-ndvi,internet of things,13,0.2362
-ndvi,deep learning,5,0.2351
-convolutional neural networks,weed control,11,1.77
-crop monitoring,object detection,33,1.2523
-vegetation indices,object detection,8,0.1724
-artificial intelligence in agriculture,pesticide application,7,1.1692
-machine learning,sentinel-2,8,1.5307
-convolutional neural networks,infrared thermography,18,2.2751
-plant disease detection,edge computing,27,4.2898
-rgb images,edge computing,4,0.7623
-edge computing,transfer learning,21,6.9764
-remote sensing,sentinel-2,7,0.8984
-deep learning,pesticide application,3,0.6002
-object detection,satellite imagery,6,0.889
-texture features,lidar,4,0.9217
-satellite imagery,small object detection,4,1.0931
-crop yield prediction,small object detection,6,0.8294
-deep learning,soil moisture,4,0.6921
-random forest,infrared thermography,5,0.4381
-plant disease detection,satellite imagery,16,2.2317
-small object detection,edge computing,10,3.1129
-pesticide application,crop health monitoring,7,1.6824
-object detection,agricultural robotics,8,0.9047
-rgb images,agricultural robotics,3,0.3831
-sustainable agriculture,crop protection,20,2.3069
-internet of things,convolutional neural networks,41,1.7439
-artificial intelligence,crop health monitoring,11,1.8077
-internet of things,crop growth monitoring,6,0.5086
-maize,machine learning,9,0.6464
-machine learning,wheat,6,0.836
-wheat,soybean,18,3.4281
-object detection,rice,3,0.365
-object detection,wheat,3,0.366
-winter wheat,weed control,3,0.615
-sustainable agriculture,pesticide application,17,1.6798
-quadrotor,edge computing,6,1.3593
-sustainable agriculture,grain yield,3,0.3064
-convolutional neural networks,hyperspectral imaging,23,2.7024
-convolutional neural networks,lidar,11,1.4217
-edge computing,weed control,4,1.3502
-deep learning,lidar,18,3.5663
-yield prediction,digital surface model,5,1.1072
-multispectral imaging,partial least squares regression,3,0.5937
-aerial imagery,edge computing,4,1.2545
-deep learning,texture features,3,0.5887
-object detection,quadrotor,5,0.605
-yield prediction,digital agriculture,8,1.499
-food security,rice,7,0.6964
-smart agriculture,texture features,3,0.2695
-plant disease detection,small object detection,9,1.4088
-flight altitude,lidar,5,1.1448
-semantic segmentation,edge computing,3,0.9444
-convolutional neural networks,crop growth monitoring,7,1.0017
-random forest,deep learning,7,0.5341
-deep learning,support vector machine,6,1.0152
-convolutional neural networks,texture features,15,1.9201
-texture features,semantic segmentation,3,0.8026
-sentinel-2,semantic segmentation,4,1.2498
-sentinel-2,transfer learning,5,1.6486
-soil moisture,texture features,4,0.8048
-winter wheat,machine learning,3,0.3512
-texture features,sentinel-2,3,0.7996
-infrared thermography,transfer learning,4,1.115
-artificial intelligence,high-throughput phenotyping,10,1.15
-artificial intelligence,lidar,10,1.6062
-hyperspectral imaging,transfer learning,11,2.8506
-weed detection,small object detection,6,1.169
-food security,grain yield,3,0.3708
-artificial intelligence,wheat,3,0.4059
-infrared thermography,edge computing,11,2.9165
-satellite imagery,semantic segmentation,6,1.6581
-plant disease detection,high-throughput phenotyping,5,0.488
-high-throughput phenotyping,transfer learning,4,0.8163
-lidar,semantic segmentation,5,1.3505
-convolutional neural networks,edge computing,26,3.9163
-random forest,transfer learning,7,0.7684
-vegetation indices,internet of things,7,0.0798
-infrared thermography,crop health monitoring,7,1.6293
-plant disease detection,lidar,12,1.636
-crop health monitoring,crop yield,6,1.743
-convolutional neural networks,artificial intelligence in agriculture,7,0.6433
-ndvi,artificial intelligence in agriculture,3,0.1178
-object detection,crop health monitoring,5,0.7408
-artificial intelligence,crop protection,11,2.0826
-crop yield prediction,pesticide application,3,0.3647
-crop yield prediction,crop protection,3,0.4257
-smart agriculture,small object detection,5,0.5208
-multispectral imagery,weed control,6,0.6863
-plant disease detection,crop growth monitoring,3,0.4528
-digital agriculture,grain yield,3,0.6681
-soil moisture,digital agriculture,3,0.559
-support vector machine,infrared thermography,3,0.5829
-smart agriculture,infrared thermography,5,0.4436
-winter wheat,crop yield,3,0.6029
-crop health monitoring,partial least squares regression,4,1.0972
-machine learning,smallholder farmers,14,2.7933
-wheat,satellite imagery,5,1.0025
-object detection,weed control,5,0.9015
-yield prediction,smallholder farmers,9,2.2179
-crop health monitoring,aerial imagery,7,1.9272
-digital agriculture,edge computing,5,1.2433
-vegetation indices,transfer learning,9,0.3818
-lidar,transfer learning,5,1.4253
-crop health monitoring,edge computing,14,3.8834
-soybean,digital surface model,4,0.9802
-plant disease detection,sentinel-2,5,0.7885
-convolutional neural networks,partial least squares regression,6,0.8937
-ndvi,machine learning,9,0.3534
-agricultural robotics,lidar,8,1.4533
-support vector machine,weed control,3,0.742
-crop monitoring,transfer learning,10,0.747
-leaf area index,transfer learning,5,0.7566
-support vector machine,soybean,7,1.3515
-internet of things,nitrogen fertilization,3,0.2312
-multispectral imaging,transfer learning,8,1.6832
-random forest,edge computing,4,0.4176
-artificial intelligence in agriculture,high-throughput phenotyping,3,0.3553
-artificial intelligence in agriculture,lidar,7,1.1579
-hyperspectral imaging,satellite imagery,6,1.2983
-internet of things,hyperspectral imaging,16,1.1136
-sustainable agriculture,lidar,10,0.9786
-ndvi,semantic segmentation,4,0.2565
-vegetation indices,artificial intelligence in agriculture,3,0.0739
-remote sensing,smallholder farmers,27,3.6135
-maize,smallholder farmers,6,0.731
-rice,crop protection,3,0.6911
-yield prediction,edge computing,12,2.8572
-multispectral imaging,crop protection,5,1.012
-lidar,sentinel-2,3,0.8073
-lidar,crop health monitoring,3,0.7141
-maize,digital agriculture,5,0.4632
-object detection,lidar,4,0.5793
-random forest,artificial intelligence,3,0.1856
-multispectral imagery,edge computing,4,0.4283
-remote sensing,edge computing,12,1.5517
-edge computing,smallholder farmers,7,2.2893
-sustainable agriculture,wheat,3,0.2473
-convolutional neural networks,digital agriculture,5,0.5927
-plant disease detection,digital agriculture,6,0.7502
-infrared thermography,small object detection,3,0.7836
-ndvi,digital agriculture,3,0.1519
-sustainable agriculture,maize,4,0.1699
-hyperspectral imaging,semantic segmentation,3,0.7367
-convolutional neural networks,flight altitude,4,0.5088
-nitrogen fertilization,crop health monitoring,3,0.7187
-sustainable agriculture,transfer learning,6,0.7194
-crop yield,transfer learning,3,1.0437
-pesticide application,semantic segmentation,3,0.8182
-smallholder farmers,transfer learning,3,1.0315
-multispectral imagery,artificial intelligence,4,0.2537
-maize,artificial intelligence,4,0.279
-deep learning,sentinel-2,6,1.3751
-deep learning,smallholder farmers,3,0.717
-satellite imagery,edge computing,10,2.7739
-hyperspectral imaging,texture features,3,0.6284
-high-throughput phenotyping,semantic segmentation,4,0.7735
-digital agriculture,crop protection,3,0.7545
-convolutional neural networks,sentinel-2,8,1.196
-flight altitude,grain yield,3,0.7169
-soybean,smallholder farmers,3,0.8181
-soil moisture,nitrogen fertilization,3,0.6134
-soybean,transfer learning,4,1.1081
-food security,lidar,7,0.829
-random forest,semantic segmentation,3,0.3121
-sustainable agriculture,leaf area index,3,0.1558
-agricultural robotics,infrared thermography,3,0.5329
-sustainable agriculture,rice,3,0.2466
-multispectral imagery,small object detection,4,0.4219
-object detection,multispectral imaging,4,0.4276
-edge computing,crop protection,3,0.9587
-random forest,smallholder farmers,3,0.3242
