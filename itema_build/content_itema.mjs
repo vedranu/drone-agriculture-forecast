@@ -3,8 +3,8 @@ export const RECEIVED = 'Received: 22 October 2026';
 export const TITLE = 'Keyword Networks, Thematic Evolution and Growth Forecasts of Agricultural Drone Research to 2035';
 export const AUTHORS = [
   { name: 'Vedran Uroš', aff: [1, 2], orcid: 'https://orcid.org/0009-0007-6568-0827' },
-  { name: 'Marko Jelić', aff: [1], orcid: 'https://orcid.org/0000-0000-0000-0000' },
-  { name: 'Sandra Mandinić', aff: [3], orcid: 'https://orcid.org/0000-0000-0000-0000' },
+  { name: 'Marko Jelić', aff: [1], orcid: 'https://orcid.org/0009-0006-4135-5221' },
+  { name: 'Sandra Mandinić', aff: [3], orcid: 'https://orcid.org/0009-0009-1312-5914' },
 ];
 // one footnote per author (institution, street, number, zip, city, country, e-mail), as in the ITEMA template
 export const FOOTNOTES = [
