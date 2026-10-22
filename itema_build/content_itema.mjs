@@ -1,6 +1,6 @@
 // ITEMA 2026 paper content. Inline markup: {c:..} in-text citation (orange), {i:..} italic, {b:..} bold, {sup:..}, {sub:..}
 export const RECEIVED = 'Received: 22 October 2026';
-export const TITLE = 'Agricultural Drones: Keyword Networks, Thematic Evolution and Growth Forecasts to 2035';
+export const TITLE = 'Keyword Networks, Thematic Evolution and Growth Forecasts of Agricultural Drone Research to 2035';
 export const AUTHORS = [
   { name: 'Vedran Uroš', aff: [1, 2], orcid: 'https://orcid.org/0009-0007-6568-0827' },
   { name: 'Marko Jelić', aff: [1], orcid: 'https://orcid.org/0000-0000-0000-0000' },
