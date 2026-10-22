@@ -36,3 +36,12 @@ P3C4,P4C4,4,0.444,0.1443,Remote sensing; Machine learning; Deep learning; Satell
 P3C5,P4C2,4,0.571,0.1982,Random forest; Winter wheat; Support vector machine; Partial least squares regression
 P3C5,P4C6,1,0.25,0.0573,Crop yield prediction
 P3C6,P4C4,2,0.667,0.078,Multispectral imaging; Plant disease detection
+P4C1,P5C1,9,0.818,1.037,Precision agriculture; Crop monitoring; Internet of things; Sustainable agriculture; Smart agriculture; Food security; Artificial intelligence in agriculture; Agricultural robotics; Digital agriculture
+P4C2,P5C2,8,0.667,0.5345,Vegetation indices; Random forest; Multispectral imagery; Leaf area index; RGB images; Winter wheat; Support vector machine; Texture features
+P4C3,P5C2,7,0.778,0.3297,NDVI; Maize; Rice; High-throughput phenotyping; Soil moisture; Wheat; Soybean
+P4C4,P5C1,3,0.333,0.152,Remote sensing; Artificial intelligence; Yield prediction
+P4C4,P5C3,2,0.222,0.089,Plant disease detection; Crop health monitoring
+P4C4,P5C4,3,0.75,0.12,Machine learning; Deep learning; Satellite imagery
+P4C4,P5C5,1,0.25,0.0354,Multispectral imaging
+P4C5,P5C3,3,0.6,0.152,Object detection; Convolutional neural networks; Weed detection
+P4C6,P5C4,1,0.25,0.06,Crop yield prediction

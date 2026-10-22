@@ -1,0 +1,5 @@
+Retrieved 2026-10-22T11:49:30.434Z
+Query: (drone OR drones OR UAV OR UAVs OR UAS OR "unmanned aerial" OR "unmanned aircraft" OR RPAS OR "remotely piloted aircraft") AND (agriculture OR agricultural OR "precision agriculture" OR "precision farming" OR "smart farming" OR farm OR farms OR farming OR farmland OR crop OR crops OR cropland OR yield OR irrigation OR fertilizer OR fertiliser OR fertilization OR pesticide OR pesticides OR spraying OR herbicide OR weed OR weeds OR phenotyping OR livestock OR cattle OR orchard OR orchards OR vineyard OR vineyards OR agronomy OR agronomic OR "plant disease" OR "crop disease" OR "soil moisture" OR paddy OR "arable land") NOT (drosophila OR gal4 OR transgene OR transgenic OR bee OR bees OR honeybee OR honeybees OR "honey bee" OR bumblebee OR apis OR urticaria OR aneurysm OR aneurysms OR patients OR "university of agricultural sciences")
+Total meta count: 23080
+Annual: 2005:30 2006:34 2007:44 2008:38 2009:56 2010:60 2011:78 2012:127 2013:167 2014:228 2015:308 2016:412 2017:590 2018:862 2019:1074 2020:1414 2021:1641 2022:1779 2023:2166 2024:3065 2025:4398 2026:4509
+Records written: 23080

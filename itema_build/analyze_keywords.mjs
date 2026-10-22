@@ -47,7 +47,7 @@ console.log('  removed (top topics):', Object.entries(removedTopics).sort((a, b)
 // ---------- keyword normalisation ----------
 const STOP = /\b(drones?|uavs?|uas|unmanned|rpas|remotely piloted|aerial vehicles?|aerial systems?|multirotor|quadcopters?|multicopters?)\b/i;
 const STOP_EXACT = new Set(['agriculture', 'agricultural', 'farming', 'crop', 'crops']);
-const ACR = { ndvi: 'NDVI', lidar: 'LiDAR', yolo: 'YOLO', iot: 'IoT', gis: 'GIS', rgb: 'RGB', cnn: 'CNN', gnss: 'GNSS', rtk: 'RTK', gps: 'GPS', lai: 'LAI', sar: 'SAR', ai: 'AI', '3d': '3D', uav: 'UAV', ndre: 'NDRE', svm: 'SVM', yolov5: 'YOLOv5', yolov7: 'YOLOv7', yolov8: 'YOLOv8', xgboost: 'XGBoost', 'u-net': 'U-Net', sfm: 'SfM', lstm: 'LSTM', 'lidar-based': 'LiDAR-based', ml: 'ML', dl: 'DL' };
+const ACR = { ndvi: 'NDVI', lidar: 'LiDAR', yolo: 'YOLO', iot: 'IoT', gis: 'GIS', rgb: 'RGB', cnn: 'CNN', gnss: 'GNSS', rtk: 'RTK', gps: 'GPS', lai: 'LAI', sar: 'SAR', ai: 'AI', '3d': '3D', uav: 'UAV', ndre: 'NDRE', svm: 'SVM', yolov5: 'YOLOv5', yolov7: 'YOLOv7', yolov8: 'YOLOv8', yolov11: 'YOLOv11', yolov10: 'YOLOv10', xgboost: 'XGBoost', 'u-net': 'U-Net', sfm: 'SfM', lstm: 'LSTM', 'lidar-based': 'LiDAR-based', ml: 'ML', dl: 'DL' };
 const raw = new Map();
 for (const w of works) for (const [k] of w.kw) { const key = k.toLowerCase().trim(); raw.set(key, (raw.get(key) || 0) + 1); }
 const canon = new Map(); // key -> canonical key (merge simple plurals)
@@ -97,6 +97,17 @@ const freqAll = docFreq(works);
 const gKeys = topK(freqAll, TOP_GLOBAL);
 const G = buildGraph(works, gKeys, freqAll);
 const comm = clusters(G, SEED, RES_GLOBAL);
+// clusters with fewer than 3 keywords are merged into the cluster they co-occur with most (same rule as the period maps)
+{
+  const size = {}; for (const k of gKeys) size[comm[k]] = (size[comm[k]] || 0) + 1;
+  for (const k of gKeys) {
+    if (size[comm[k]] >= 3) continue;
+    const score = {};
+    G.forEachEdge(k, (e, a, s, t) => { const o = s === k ? t : s; if (size[comm[o]] >= 3) score[comm[o]] = (score[comm[o]] || 0) + a.c; });
+    const best = Object.keys(score).sort((x, y) => score[y] - score[x])[0];
+    if (best !== undefined) { size[comm[k]]--; comm[k] = isNaN(+best) ? best : +best; size[comm[k]]++; }
+  }
+}
 // renumber clusters by total frequency (1 = largest)
 const cTot = {}; for (const k of gKeys) cTot[comm[k]] = (cTot[comm[k]] || 0) + freqAll.get(k);
 const order = Object.keys(cTot).sort((a, b) => cTot[b] - cTot[a]);

@@ -1,94 +1,90 @@
 {
  "retrieved_years": [
   2005,
-  2024
+  2026
  ],
- "n_retrieved": 14173,
- "n_removed": 474,
- "n_works": 13699,
- "n_with_keywords": 13682,
- "mean_kw_per_work": 8.1,
- "distinct_keywords": 33323,
+ "n_retrieved": 23080,
+ "n_removed": 723,
+ "n_works": 22357,
+ "n_with_keywords": 22310,
+ "mean_kw_per_work": 8.48,
+ "distinct_keywords": 46621,
  "global_clusters": [
   {
    "cluster": 1,
-   "n": 15,
-   "total": 6237,
-   "top": [
-    "Precision agriculture",
-    "Crop monitoring",
-    "Internet of things",
-    "Smart agriculture",
-    "Remote sensing",
-    "Sustainable agriculture",
-    "Food security",
-    "Machine learning"
-   ],
-   "mean_year": 2021.53
-  },
-  {
-   "cluster": 2,
-   "n": 16,
-   "total": 5976,
+   "n": 25,
+   "total": 12852,
    "top": [
     "Vegetation indices",
     "NDVI",
-    "Multispectral imagery",
     "Random forest",
-    "Leaf area index",
+    "Multispectral imagery",
+    "Maize",
     "Crop yield prediction",
-    "RGB images",
-    "Winter wheat"
+    "Leaf area index",
+    "RGB images"
    ],
-   "mean_year": 2021.28
+   "mean_year": 2022.69
+  },
+  {
+   "cluster": 2,
+   "n": 14,
+   "total": 7786,
+   "top": [
+    "Crop monitoring",
+    "Internet of things",
+    "Smart agriculture",
+    "Sustainable agriculture",
+    "Remote sensing",
+    "Food security",
+    "Artificial intelligence",
+    "Artificial intelligence in agriculture"
+   ],
+   "mean_year": 2023.68
   },
   {
    "cluster": 3,
-   "n": 14,
-   "total": 2989,
+   "n": 5,
+   "total": 5754,
    "top": [
-    "Maize",
-    "High-throughput phenotyping",
-    "Rice",
-    "Wheat",
-    "Digital surface model",
-    "Structure from motion",
-    "Soybean",
-    "Nitrogen fertilization"
+    "Precision agriculture",
+    "Quadrotor",
+    "Flight altitude",
+    "Pesticide application",
+    "Crop protection"
    ],
-   "mean_year": 2020.7
+   "mean_year": 2022.94
   },
   {
    "cluster": 4,
-   "n": 10,
-   "total": 2188,
+   "n": 12,
+   "total": 4250,
    "top": [
     "Convolutional neural networks",
+    "Plant disease detection",
     "Object detection",
     "Weed detection",
-    "Multispectral imaging",
-    "Plant disease detection",
-    "Aerial imagery",
-    "Infrared thermography",
-    "Hyperspectral imaging"
+    "Deep learning",
+    "Crop health monitoring",
+    "Small object detection",
+    "Aerial imagery"
    ],
-   "mean_year": 2021.27
+   "mean_year": 2023.62
   },
   {
    "cluster": 5,
-   "n": 5,
-   "total": 1019,
+   "n": 4,
+   "total": 1388,
    "top": [
-    "Quadrotor",
-    "Pesticide application",
-    "Flight altitude",
-    "Crop protection",
-    "Pesticide spraying"
+    "Multispectral imaging",
+    "Hyperspectral imaging",
+    "Infrared thermography",
+    "LiDAR"
    ],
-   "mean_year": 2020.63
+   "mean_year": 2022.95
   }
  ],
- "edges_global": 1038,
+ "edges_global": 1266,
  "heat_years": [
   2014,
   2015,
@@ -100,30 +96,32 @@
   2021,
   2022,
   2023,
-  2024
+  2024,
+  2025,
+  2026
  ],
  "heat_established": [
   "Precision agriculture",
   "Vegetation indices",
-  "NDVI",
-  "Crop monitoring",
   "Internet of things",
+  "Crop monitoring",
   "Sustainable agriculture",
+  "NDVI",
   "Smart agriculture",
+  "Food security",
   "Random forest",
-  "Multispectral imagery",
-  "Crop yield prediction"
+  "Remote sensing"
  ],
  "heat_emerging": [
-  "YOLOv5",
   "YOLOv8",
-  "XGBoost",
   "Small object detection",
-  "U-Net",
+  "XGBoost",
+  "Edge computing",
+  "Digital twin",
+  "YOLOv11",
+  "Lightweight object detection",
   "Artificial intelligence in agriculture",
-  "Object detection",
-  "Machine learning",
-  "Blockchain",
-  "Food security"
+  "Technology adoption barriers",
+  "Explainable AI"
  ]
 }

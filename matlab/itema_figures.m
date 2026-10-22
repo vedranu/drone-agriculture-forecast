@@ -89,9 +89,9 @@ f3 = figure('Units', 'centimeters', 'Position', [2 2 16 9.6], 'Color', 'w');
 ax = axes(f3, 'Position', [0.005 0.11 0.99 0.885]); hold(ax, 'on'); axis(ax, 'equal', 'off');
 pad = 0.11 * range(Tn.x); xlim(ax, [min(Tn.x) - pad, max(Tn.x) + pad]); ylim(ax, [min(Tn.y) - 0.05 * range(Tn.x), max(Tn.y) + 0.05 * range(Tn.x)]);
 % thematic cluster names, assigned from marker keywords (robust to cluster renumbering)
-NAMEMAP = {'pesticide application', 'Spraying operations'; 'convolutional neural network', 'Computer vision'; ...
-    'object detection', 'Computer vision'; 'high-throughput phenotyping', 'Phenotyping and crop structure'; 'maize', 'Phenotyping and crop structure'; ...
-    'vegetation indices', 'Spectral crop monitoring'; 'ndvi', 'Spectral crop monitoring'; 'internet of things', 'Smart farming'; 'precision agriculture', 'Smart farming'};
+NAMEMAP = {'pesticide application', 'Spraying and flight operations'; 'hyperspectral imaging', 'Imaging sensors'; 'object detection', 'Computer vision'; ...
+    'convolutional neural networks', 'Computer vision'; 'vegetation indices', 'Spectral monitoring and phenotyping'; 'ndvi', 'Spectral monitoring and phenotyping'; ...
+    'internet of things', 'Smart farming'; 'precision agriculture', 'Smart farming'};
 CLUNAME = cell(1, nclu);
 for c = 1:nclu
     kws = lower(Tn.label(Tn.cluster == c));
@@ -113,7 +113,7 @@ for i = 1:height(Tn)
     hT(i) = text(ax, Tn.x(i), Tn.y(i), char(Tn.label(i)), 'FontSize', fs(i), 'HorizontalAlignment', 'center', ...
         'VerticalAlignment', 'middle', 'Color', [0.08 0.08 0.08], 'Margin', 0.3, 'FontWeight', 'normal');
 end
-drawnow; repel_labels(hT, 400);
+drawnow; repel_labels(hT, 2000);
 for i = 1:height(Tn)   % leader line when a label had to move away from its node
     p = hT(i).Position; dd = hypot(p(1) - Tn.x(i), p(2) - Tn.y(i));
     if dd > 0.025 * range(Tn.x), plot(ax, [Tn.x(i) p(1)], [Tn.y(i) p(2)], '-', 'Color', [0.4 0.4 0.4 0.6], 'LineWidth', 0.3); end
@@ -194,7 +194,7 @@ oE = find(~isE); [~, a] = sort(firstY(oE)); oE = oE(a);
 oM = find(isE); [~, a] = sort(firstY(oM)); oM = oM(a);
 ord = [oE; oM]; V = V(ord, :);
 rl = H.label(ord); rl(H.group(ord) == "emerging") = rl(H.group(ord) == "emerging") + " *";
-xl = string(hy); if hy(end) == 2026, xl(end) = "2026â€ "; end
+xl = string(hy);
 f5 = figure('Units', 'centimeters', 'Position', [2 2 16 9.6], 'Color', 'w');
 hh = heatmap(f5, xl, rl, round(V, 1), 'Colormap', heat_cmap(256), 'ColorScaling', 'scaledrows', ...
     'CellLabelFormat', '%.0f', 'FontSize', 6, 'GridVisible', 'off');

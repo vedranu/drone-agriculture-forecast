@@ -3,12 +3,12 @@ import * as C from './content_itema.mjs';
 const texts = [C.ABSTRACT, C.EVO_TEXT, C.HEAT_TEXT, ...C.BODY.filter((e) => e[0] === 'p').map((e) => e[1])];
 const cites = new Set();
 for (const t of texts) for (const m of t.matchAll(/\{c:\(([^}]*)\)\}/g)) for (const part of m[1].split(';')) cites.add(part.trim());
-const key = (s) => { const m = s.match(/^(.*?),\s*(\d{4}[a-z]?)$/); if (!m) return s; const a = m[1].replace(/ et al\.$/, '').split(/ & |, /)[0].trim(); return `${a}|${m[2]}`; };
+const key = (s) => { const m = s.match(/^(.*?),\s*(\d{4}[a-z]?|In Press-[a-z])$/); if (!m) return s; const a = m[1].replace(/ et al\.$/, '').split(/ & |, /)[0].trim(); return `${a}|${m[2]}`; };
 const citeKeys = new Map([...cites].map((c) => [key(c), c]));
 const refKeys = new Map();
 for (const r0 of C.REFS) {
   const r = r0.replace(/^!/, '');
-  const y = (r.match(/\((\d{4}[a-z]?)[,)]/) || [])[1];
+  const y = (r.match(/\((\d{4}[a-z]?|In Press-[a-z])[,)]/) || [])[1];
   let a = r.split(',')[0].trim();
   if (/^Commission Implementing Regulation/.test(r)) a = 'Commission Implementing Regulation (EU) 2019/947';
   if (/^Directive 2009\/128/.test(r)) a = 'Directive 2009/128/EC';

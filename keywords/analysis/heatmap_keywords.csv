@@ -1,21 +1,21 @@
-keyword,label,group,growth_ratio,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024
-precision agriculture,Precision agriculture,established,1.21,159.42,159.86,177.22,141.34,170.64,159.7,176.3,160.1,162.54,174.96,212.67
-vegetation indices,Vegetation indices,established,1.38,33.82,47.62,50.63,53,76.37,98.86,98.99,110.69,126.8,102.89,106.17
-ndvi,NDVI,established,0.74,14.49,51.02,83.54,74.2,77.57,81.75,81.65,78.8,57.06,68.75,49.88
-crop monitoring,Crop monitoring,established,0.94,67.63,57.82,73.42,56.54,56.09,46.58,62.14,45.03,53.6,48.84,56.96
-internet of things,Internet of things,established,3.31,0,0,7.59,10.6,8.35,23.76,34.68,43.15,40.35,46.47,51.9
-sustainable agriculture,Sustainable agriculture,established,5.29,0,3.4,0,1.77,8.35,10.46,13.01,12.51,13.26,27.03,56.29
-smart agriculture,Smart agriculture,established,3.28,4.83,3.4,7.59,5.3,7.16,19.96,22.4,40.65,29.97,40.78,42.8
-random forest,Random forest,established,2.53,0,3.4,10.13,8.83,16.71,20.91,33.96,38.77,48.41,36.51,45.84
-multispectral imagery,Multispectral imagery,established,0.85,19.32,34.01,37.97,35.34,34.61,44.68,51.3,50.03,41.5,39.36,30.67
-crop yield prediction,Crop yield prediction,established,1.29,0,10.2,22.78,28.27,27.45,20.91,25.29,21.89,27.67,33.19,31.68
-yolov5,YOLOv5,emerging,7.14,0,0,0,0,0,0,0,1.88,14.41,15.65,13.14
-yolov8,YOLOv8,emerging,6.55,0,0,0,0,0,0,0,0,0,3.32,19.89
-xgboost,XGBoost,emerging,5.76,0,0,0,0,0,0,2.17,4.38,5.76,9.48,12.81
-small object detection,Small object detection,emerging,5.57,0,0,0,1.77,0,0,0.72,3.13,9.8,12.8,12.81
-u-net,U-Net,emerging,5.06,0,0,0,0,0,0.95,5.06,5,10.37,9.01,13.48
-artificial intelligence in agriculture,Artificial intelligence in agriculture,emerging,4.58,0,0,2.53,0,2.39,6.65,5.06,8.76,12.68,16.12,28.99
-object detection,Object detection,emerging,4.32,4.83,3.4,2.53,1.77,5.97,7.6,16.62,16.89,27.67,26.55,33.37
-machine learning,Machine learning,emerging,4.25,0,3.4,2.53,1.77,1.19,7.6,10.84,14.38,18.44,23.71,25.28
-blockchain,Blockchain,emerging,3.92,0,0,2.53,0,0,0.95,4.34,5.63,10.37,9.01,11.12
-food security,Food security,emerging,3.69,0,0,7.59,7.07,5.97,7.6,15.9,11.26,17.29,23.23,36.06
+keyword,label,group,growth_ratio,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026
+precision agriculture,Precision agriculture,established,1.5,159.42,159.86,177.22,141.34,170.64,159.7,176.3,160.1,162.54,174.96,212.67,264.71,225.88
+vegetation indices,Vegetation indices,established,1.17,33.82,47.62,50.63,53,76.37,98.86,98.99,110.69,126.8,102.89,106.17,93.14,84.36
+internet of things,Internet of things,established,3.56,0,0,7.59,10.6,8.35,23.76,34.68,43.15,40.35,46.47,51.9,58.59,48.24
+crop monitoring,Crop monitoring,established,0.92,67.63,57.82,73.42,56.54,56.09,46.58,62.14,45.03,53.6,48.84,56.96,62.79,42.3
+sustainable agriculture,Sustainable agriculture,established,5.94,0,3.4,0,1.77,8.35,10.46,13.01,12.51,13.26,27.03,56.29,58.36,40.92
+ndvi,NDVI,established,0.62,14.49,51.02,83.54,74.2,77.57,81.75,81.65,78.8,57.06,68.75,49.88,54.39,42.98
+smart agriculture,Smart agriculture,established,3.6,4.83,3.4,7.59,5.3,7.16,19.96,22.4,40.65,29.97,40.78,42.8,46.92,45.04
+food security,Food security,established,4.97,0,0,7.59,7.07,5.97,7.6,15.9,11.26,17.29,23.23,36.06,45.05,37.95
+random forest,Random forest,established,2.46,0,3.4,10.13,8.83,16.71,20.91,33.96,38.77,48.41,36.51,45.84,46.45,35.21
+remote sensing,Remote sensing,established,1.15,24.15,23.81,50.63,28.27,29.83,24.71,20.23,21.89,19.6,24.18,27.64,34.78,38.18
+yolov8,YOLOv8,emerging,9.75,0,0,0,0,0,0,0,0,0,3.32,19.89,19.61,19.2
+small object detection,Small object detection,emerging,9.06,0,0,0,1.77,0,0,0.72,3.13,9.8,12.8,12.81,19.61,22.18
+xgboost,XGBoost,emerging,8.25,0,0,0,0,0,0,2.17,4.38,5.76,9.48,12.81,15.41,17.38
+edge computing,Edge computing,emerging,7.27,0,0,2.53,0,0,1.9,0.72,5,9.8,10.91,9.77,19.37,23.32
+digital twin,Digital twin,emerging,6.87,0,0,2.53,0,0,0,0,0,2.31,3.79,4.04,11.9,19.66
+yolov11,YOLOv11,emerging,6,0,0,0,0,0,0,0,0,0,0,0,7.7,16
+lightweight object detection,Lightweight object detection,emerging,6,0,0,0,0,0,0,0,2.5,2.88,3.79,5.06,11.2,12.57
+artificial intelligence in agriculture,Artificial intelligence in agriculture,emerging,5.88,0,0,2.53,0,2.39,6.65,5.06,8.76,12.68,16.12,28.99,36.18,24.69
+technology adoption barriers,Technology adoption barriers,emerging,5.6,0,0,0,0,0,1.9,2.17,1.88,0.58,4.27,11.8,18.91,10.52
+explainable ai,Explainable AI,emerging,5.18,0,0,2.53,0,0,0,0,0,0,0.47,3.03,5.84,17.83
